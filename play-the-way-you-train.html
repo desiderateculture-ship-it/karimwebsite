@@ -463,18 +463,27 @@ h1,h2,h3,.headline{
     <h2 style="margin-top:14px">Apply now. Get picked.</h2>
     <p class="standfirst">Fill out this short application. If it's a fit, Karim will follow up with a time for your first session.</p>
 
-    <!-- ⚠️ WIRE ME: connect this form to GHL / email endpoint before launch.
-         Currently action="#" — submissions go nowhere. -->
-    <form class="form" action="#WIRE-ME-TO-GHL-OR-EMAIL" method="post">
+    <form class="form" id="applyForm" method="post">
+      <!-- honeypot — humans never see it; bots that fill it get silently dropped -->
+      <div style="position:absolute;left:-9999px;top:auto;height:1px;overflow:hidden" aria-hidden="true">
+        <label for="f-company">Company</label><input id="f-company" name="company" type="text" tabindex="-1" autocomplete="off">
+      </div>
       <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
       <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
       <div class="field"><label for="f-sport">What sport do you play, and what level?</label><input id="f-sport" name="sport" type="text" placeholder="e.g. AFL, state league" required></div>
       <div class="field"><label for="f-head">Right now, what happens in your head after a mistake or under pressure?</label><textarea id="f-head" name="pressure" placeholder="Tell it straight." required></textarea></div>
       <div class="field"><label for="f-tried">What have you already tried to fix this?</label><textarea id="f-tried" name="tried"></textarea></div>
       <div class="field"><label for="f-ready">Are you ready to start within the next two weeks if this is a fit?</label><input id="f-ready" name="ready" type="text" placeholder="Yes / No" required></div>
-      <div class="submit-row"><button class="btn" type="submit">Submit Application</button></div>
-      <p class="apply-note">Applications reviewed personally by Karim · Limited 1:1 spots per month</p>
+      <div class="submit-row"><button class="btn" type="submit" id="applyBtn">Submit Application</button></div>
+      <p class="apply-note" id="applyNote">Applications reviewed personally by Karim · Limited 1:1 spots per month</p>
+      <p class="apply-note" id="applyError" hidden style="color:#B01B10;font-weight:700">Something went wrong sending your application. Please try again — or reach Karim directly via <a href="https://www.karimboktor.com/contact" style="color:inherit">karimboktor.com/contact</a>.</p>
     </form>
+    <div id="applyDone" hidden>
+      <hr class="rule-double" style="margin:10px 0 26px">
+      <h3 style="font-family:'Anton',sans-serif;text-transform:uppercase;font-size:1.6rem;letter-spacing:.02em">Application received.</h3>
+      <p class="standfirst" style="margin-top:12px">Karim reviews every application personally. If it's a fit, you'll hear back within 48 hours with a time for your first session.</p>
+      <p class="apply-note" style="margin-top:18px">Keep training. The gap closes soon.</p>
+    </div>
   </div>
 </section>
 
@@ -505,6 +514,44 @@ h1,h2,h3,.headline{
   function openVideo(src,t){lastFocus=t;vplayer.src=src;vmodal.classList.add('open');document.body.style.overflow='hidden';vplayer.play().catch(function(){});vclose.focus();}
   function closeVideo(){vplayer.pause();vplayer.removeAttribute('src');vplayer.load();vmodal.classList.remove('open');document.body.style.overflow='';if(lastFocus)lastFocus.focus();}
   document.querySelectorAll('.frame[data-video]').forEach(function(c){c.addEventListener('click',function(){openVideo(c.dataset.video,c);});});
+
+  /* application form → GHL inbound webhook */
+  var GHL_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/EEBzP9YC3rcjMAgCWpCu/webhook-trigger/4bbc7541-d75c-44a4-95bf-8c221a76b6ca';
+  var form = document.getElementById('applyForm');
+  var btn = document.getElementById('applyBtn');
+  var errEl = document.getElementById('applyError');
+  var doneEl = document.getElementById('applyDone');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (form.company && form.company.value) return; /* honeypot tripped — drop silently */
+    errEl.hidden = true;
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+    var payload = {
+      name: form.name.value.trim(),
+      email: form.email.value.trim(),
+      sport: form.sport.value.trim(),
+      pressure: form.pressure.value.trim(),
+      tried: form.tried.value.trim(),
+      ready: form.ready.value.trim(),
+      source: 'Play the Way You Train application',
+      page: location.href
+    };
+    fetch(GHL_WEBHOOK, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(payload)
+    }).then(function(r){
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      form.hidden = true;
+      doneEl.hidden = false;
+      doneEl.scrollIntoView({behavior:'smooth', block:'center'});
+    }).catch(function(){
+      errEl.hidden = false;
+      btn.disabled = false;
+      btn.textContent = 'Submit Application';
+    });
+  });
   vclose.addEventListener('click',closeVideo);
   vmodal.addEventListener('click',function(e){if(e.target===vmodal)closeVideo();});
   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&vmodal.classList.contains('open'))closeVideo();});
