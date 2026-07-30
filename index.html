@@ -827,6 +827,11 @@ footer{padding:80px 6vw 40px;background:var(--black);color:var(--white)}
   <div class="legal">© 2026 The Boktor Method™ · Coaching, not therapy · Karim Boktor is a mental performance coach, not a psychologist or medical practitioner<br><a href="https://www.karimboktor.com/contact" style="color:inherit">Terms &amp; Conditions</a></div>
 </footer>
 
+<div class="vmodal" id="vmodal" role="dialog" aria-modal="true" aria-label="Athlete video">
+  <button class="vclose" id="vclose" aria-label="Close video">&times;</button>
+  <video id="vplayer" controls playsinline preload="none"></video>
+</div>
+
 <script>
 (function(){
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -929,10 +934,5 @@ footer{padding:80px 6vw 40px;background:var(--black);color:var(--white)}
   });
 })();
 </script>
-
-<div class="vmodal" id="vmodal" role="dialog" aria-modal="true" aria-label="Athlete video">
-  <button class="vclose" id="vclose" aria-label="Close video">&times;</button>
-  <video id="vplayer" controls playsinline preload="none"></video>
-</div>
 </body>
 </html>
