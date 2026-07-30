@@ -1,1681 +1,940 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karim Boktor — The Performance Hypnotherapist for the World's Top 1%</title>
-<meta name="description" content="Performance hypnotherapy for the world's top 1% — elite athletes, founders and decision-makers. The last barrier isn't skill. It's subconscious. The Boktor Method removes it.">
-<link rel="canonical" href="https://karimboktor.com/">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Karim Boktor">
-<meta property="og:type" content="website">
+<title>Karim Boktor — Mental Performance Coach for Elite Athletes</title>
+<meta name="description" content="Mental performance coach for elite athletes. Karim Boktor removes the subconscious patterns behind hesitation, pressure and game-day nerves — fast.">
+<link rel="canonical" href="https://www.karimboktor.com/">
 <meta property="og:locale" content="en_AU">
-<meta property="og:url" content="https://karimboktor.com/">
-<meta property="og:title" content="Karim Boktor — The Performance Hypnotherapist for the World's Top 1%">
-<meta property="og:description" content="You've outperformed the 99%. What's left is subconscious. The Boktor Method removes it — ask the NFL starter who went from the bench to the Super Bowl.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Karim Boktor — Mental Performance Coach for Elite Athletes">
+<meta property="og:description" content="The player your coach sees at training should be the player who shows up on game day. Karim closes that gap.">
+<meta property="og:url" content="https://www.karimboktor.com/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Karim Boktor — The Performance Hypnotherapist for the World's Top 1%">
-<meta name="twitter:description" content="The last barrier isn't skill. It's subconscious. The Boktor Method removes it.">
-
-<!-- Fonts: Satoshi (geometric sans) + Playfair Display (serif accent) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,500;1,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<!-- Satoshi via Fontshare CDN -->
-<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
-
-<!-- Lenis smooth scroll -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.8/dist/lenis.css">
-
-<!-- Schema.org -->
+<meta name="twitter:title" content="Karim Boktor — Mental Performance Coach for Elite Athletes">
+<meta name="twitter:description" content="Play the way you train, every single game.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Karim Boktor",
-  "jobTitle": "Performance Hypnotherapist",
-  "description": "The Performance Hypnotherapist for the world's top 1%. Doctorate researcher and founder of The Boktor Method — private subconscious performance work for elite athletes, founders and decision-makers.",
-  "url": "https://karimboktor.com",
-  "sameAs": ["https://www.linkedin.com/in/karimboktor","https://www.instagram.com/karimboktor"]
+  "url": "https://www.karimboktor.com/",
+  "jobTitle": "Mental Performance Coach",
+  "description": "Mental performance coach for elite athletes and club leaders. Founder of The Boktor Method. TEDx speaker. MBA, internationally recognised Master Trainer in NLP, Timeline Therapy and Hypnotherapy.",
+  "knowsAbout": ["performance psychology", "hypnotherapy", "NLP", "elite sport", "leadership"],
+  "sameAs": [
+    "https://www.instagram.com/karimboktor",
+    "https://www.linkedin.com/in/businesshypnotherapist/",
+    "https://www.facebook.com/karim.boktor"
+  ],
+  "makesOffer": {
+    "@type": "Offer",
+    "name": "Play the Way You Train — 4-Week Program",
+    "description": "4-week 1:1 program for elite athletes: calm, clear and confident on game day, in 30 days or less.",
+    "url": "https://www.karimboktor.com/play-the-way-you-train"
+  }
 }
 </script>
-
-<style>
-/* ============================================================
-   DESIGN SYSTEM — Kasia-level monochromatic editorial
-   ============================================================ */
-:root {
-  /* Warm near-black / near-white — NOT pure #000 or #fff */
-  --dark:    #191917;
-  --light:   #F5F5F3;
-  --white:   #FFFFFF;
-  --gray-20: #EBEBEA;
-  --gray-40: #CDCDC9;
-  --gray-60: #8C8C88;
-  --gray-80: #3A3A38;
-
-  /* Typography */
-  --sans:    'Satoshi', 'Inter', system-ui, sans-serif;
-  --serif:   'Playfair Display', Georgia, serif;
-
-  /* Spacing */
-  --section-py: clamp(5rem, 10vw, 8rem);
-  --wrap-px:    clamp(1.5rem, 5vw, 5rem);
-  --max-w:      1320px;
-}
-
-/* ---- Reset ---- */
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { font-size: 16px; scroll-behavior: auto; }
-body {
-  font-family: var(--sans);
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.6;
-  background: var(--dark);
-  color: var(--white);
-  overflow-x: hidden;
-  cursor: none;
-}
-img { display: block; max-width: 100%; }
-a { text-decoration: none; color: inherit; }
-button { background: none; border: none; cursor: none; }
-
-/* ---- Wrap ---- */
-.wrap {
-  max-width: var(--max-w);
-  margin: 0 auto;
-  padding-left: var(--wrap-px);
-  padding-right: var(--wrap-px);
-}
-
-/* ---- Typography scale ---- */
-.h1 {
-  font-family: var(--sans);
-  font-size: clamp(3.5rem, 8vw, 7.5rem);
-  font-weight: 500;
-  line-height: 1.0;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  color: var(--white);
-}
-.h1 .accent {
-  font-family: var(--serif);
-  font-style: italic;
-  text-transform: none;
-  letter-spacing: normal;
-  font-weight: 500;
-}
-.h2 {
-  font-family: var(--sans);
-  font-size: clamp(2.5rem, 5.5vw, 5.2rem);
-  font-weight: 500;
-  line-height: 1.0;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  color: inherit;
-}
-.h2 em {
-  font-family: var(--serif);
-  font-style: italic;
-  text-transform: none;
-  letter-spacing: normal;
-  font-weight: 500;
-}
-.h3 {
-  font-family: var(--sans);
-  font-size: clamp(1.3rem, 2.5vw, 2rem);
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: inherit;
-}
-.h3 em {
-  font-family: var(--serif);
-  font-style: italic;
-  text-transform: none;
-  letter-spacing: normal;
-}
-.sec-num {
-  display: block;
-  font-family: var(--sans);
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  color: var(--gray-60);
-  margin-bottom: 1.5rem;
-}
-.lede {
-  font-size: clamp(1rem, 1.8vw, 1.2rem);
-  font-weight: 300;
-  line-height: 1.65;
-  color: inherit;
-  max-width: 56ch;
-}
-.body-text {
-  font-size: clamp(0.9rem, 1.4vw, 1.05rem);
-  font-weight: 300;
-  line-height: 1.7;
-  color: inherit;
-}
-
-/* ---- Buttons ---- */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: var(--sans);
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 0.85rem 1.6rem;
-  border-radius: 0; /* ZERO — critical for premium feel */
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-  white-space: nowrap;
-}
-.btn-white {
-  background: var(--white);
-  color: var(--dark);
-  border: 1px solid var(--white);
-}
-.btn-white:hover { background: transparent; color: var(--white); }
-.btn-outline-white {
-  background: transparent;
-  color: var(--white);
-  border: 1px solid rgba(255,255,255,0.4);
-}
-.btn-outline-white:hover { border-color: var(--white); }
-.btn-dark {
-  background: var(--dark);
-  color: var(--white);
-  border: 1px solid var(--dark);
-}
-.btn-dark:hover { background: transparent; color: var(--dark); }
-.btn-outline-dark {
-  background: transparent;
-  color: var(--dark);
-  border: 1px solid var(--dark);
-}
-.btn-outline-dark:hover { background: var(--dark); color: var(--white); }
-
-/* ============================================================
-   LOADER
-   ============================================================ */
-#loader {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background: var(--dark);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: 3rem var(--wrap-px);
-  pointer-events: all;
-}
-.loader-count {
-  font-family: var(--sans);
-  font-size: clamp(4rem, 12vw, 9rem);
-  font-weight: 500;
-  letter-spacing: -0.04em;
-  color: var(--white);
-  line-height: 1;
-  margin-bottom: 2rem;
-}
-.loader-bar-wrap {
-  width: 100%;
-  height: 1px;
-  background: var(--gray-80);
-  overflow: hidden;
-}
-.loader-bar {
-  height: 100%;
-  width: 0%;
-  background: var(--white);
-  transition: width 0.05s linear;
-}
-.loader-label {
-  position: absolute;
-  top: 3rem;
-  right: var(--wrap-px);
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--gray-60);
-}
-
-/* ============================================================
-   CUSTOM CURSOR
-   ============================================================ */
-#cursor {
-  position: fixed;
-  width: 10px;
-  height: 10px;
-  background: var(--white);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%);
-  mix-blend-mode: difference;
-  transition: width 0.25s, height 0.25s, opacity 0.25s;
-}
-#cursor.hover {
-  width: 40px;
-  height: 40px;
-}
-
-/* ============================================================
-   NAVIGATION
-   ============================================================ */
-#nav {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 900;
-  padding: 1.4rem var(--wrap-px);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  transition: background 0.4s, backdrop-filter 0.4s;
-}
-#nav.scrolled {
-  background: rgba(25,25,23,0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-.nav-logo img { height: 36px; opacity: 0.9; }
-.nav-links {
-  display: flex;
-  gap: 2.5rem;
-  align-items: center;
-}
-.nav-links a {
-  font-size: 0.72rem;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  color: rgba(255,255,255,0.7);
-  transition: color 0.2s;
-}
-.nav-links a:hover { color: var(--white); }
-.nav-cta { font-size: 0.72rem; }
-.nav-hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  padding: 4px;
-}
-.nav-hamburger span {
-  display: block;
-  width: 22px;
-  height: 1px;
-  background: var(--white);
-  transition: transform 0.3s, opacity 0.3s;
-}
-
-/* Mobile menu */
-.mobile-menu {
-  position: fixed;
-  inset: 0;
-  z-index: 950;
-  background: var(--dark);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 4rem var(--wrap-px);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s;
-}
-.mobile-menu.open { opacity: 1; pointer-events: all; }
-.mm-close {
-  position: absolute;
-  top: 1.5rem; right: var(--wrap-px);
-  font-size: 1.2rem;
-  color: var(--gray-60);
-  transition: color 0.2s;
-}
-.mm-close:hover { color: var(--white); }
-.mm-link {
-  font-family: var(--sans);
-  font-size: clamp(2rem, 6vw, 3.5rem);
-  font-weight: 500;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.5);
-  line-height: 1.2;
-  margin-bottom: 0.4rem;
-  transition: color 0.2s;
-}
-.mm-link:hover { color: var(--white); }
-.mm-cta {
-  margin-top: 2rem;
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--white);
-  border-bottom: 1px solid rgba(255,255,255,0.3);
-  padding-bottom: 0.3rem;
-}
-
-/* ============================================================
-   STICKY BOTTOM BAR
-   ============================================================ */
-#sticky-bar {
-  position: fixed;
-  bottom: 2rem;
-  right: var(--wrap-px);
-  z-index: 800;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.4s, transform 0.4s;
-  pointer-events: none;
-}
-#sticky-bar.visible {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: all;
-}
-
-/* ============================================================
-   SCROLL PROGRESS
-   ============================================================ */
-#progress {
-  position: fixed;
-  top: 0; left: 0;
-  height: 1px;
-  width: 0%;
-  background: var(--white);
-  z-index: 901;
-  opacity: 0.4;
-}
-
-/* ============================================================
-   HERO — Dark, asymmetric split, Kasia-style
-   ============================================================ */
-#hero {
-  background: var(--dark);
-  min-height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-.hero-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 100vh;
-  align-items: end;
-}
-.hero-left {
-  padding: 8rem var(--wrap-px) 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  position: relative;
-  z-index: 2;
-}
-.hero-eyebrow {
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--gray-60);
-  margin-bottom: 2rem;
-}
-/* Hero headline — line overflow clip for slide-up reveal */
-.h1-wrap {
-  overflow: hidden;
-  margin-bottom: 0.1em;
-}
-.h1-line {
-  display: block;
-  transform: translateY(110%);
-  opacity: 0;
-}
-.h1-line.accent {
-  font-family: var(--serif);
-  font-style: italic;
-  text-transform: none;
-  letter-spacing: normal;
-  font-weight: 500;
-  font-size: clamp(3.8rem, 8.5vw, 8rem);
-}
-.hero-pull {
-  font-size: clamp(0.85rem, 1.3vw, 1rem);
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  color: var(--gray-60);
-  margin-top: 2rem;
-  opacity: 0;
-  transform: translateY(12px);
-}
-.hero-ctas {
-  display: flex;
-  gap: 1rem;
-  margin-top: 2.5rem;
-  flex-wrap: wrap;
-  opacity: 0;
-  transform: translateY(12px);
-}
-.hero-scroll-cue {
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  opacity: 0;
-  transform: translateY(8px);
-}
-.scroll-cue-text {
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--gray-60);
-}
-.scroll-cue-line {
-  width: 1px;
-  height: 40px;
-  background: var(--gray-60);
-  position: relative;
-  overflow: hidden;
-}
-.scroll-cue-line::after {
-  content: '';
-  position: absolute;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--white);
-  animation: scrollPulse 1.8s ease-in-out infinite;
-}
-@keyframes scrollPulse {
-  0% { top: -100%; }
-  100% { top: 100%; }
-}
-
-/* Hero right — portrait */
-.hero-right {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 0;
-  overflow: hidden;
-}
-.hero-portrait-wrap {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
-.hero-portrait-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
-  filter: grayscale(100%) contrast(1.05);
-  opacity: 0;
-  transform: scale(1.04);
-  transition: opacity 1.2s ease, transform 1.2s ease;
-}
-.hero-portrait-wrap img.loaded {
-  opacity: 0.85;
-  transform: scale(1);
-}
-.hero-portrait-placeholder {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--gray-80);
-  color: var(--gray-60);
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 2rem;
-}
-
-/* ============================================================
-   MARQUEE TICKER
-   ============================================================ */
-.marquee-section {
-  background: var(--dark);
-  border-top: 1px solid var(--gray-80);
-  border-bottom: 1px solid var(--gray-80);
-  padding: 1rem 0;
-  overflow: hidden;
-}
-.marquee-track {
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-}
-.marquee-inner {
-  display: flex;
-  align-items: center;
-  gap: 2.5rem;
-  white-space: nowrap;
-  animation: marqueeScroll 28s linear infinite;
-  flex-shrink: 0;
-  padding-right: 2.5rem;
-}
-.marquee-inner span {
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--gray-60);
-}
-.marquee-inner span.dot {
-  color: var(--gray-80);
-  font-size: 0.5rem;
-}
-@keyframes marqueeScroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
-/* ============================================================
-   SECTION — LIGHT (The Ceiling)
-   ============================================================ */
-#ceiling {
-  background: var(--light);
-  color: var(--dark);
-  padding: var(--section-py) 0;
-}
-.section-grid {
-  display: grid;
-  grid-template-columns: 0.8fr 5fr 4fr 0.5fr 5.5fr;
-  gap: 0;
-  align-items: start;
-}
-.sg-num    { grid-column: 1; padding-top: 0.3rem; }
-.sg-head   { grid-column: 2 / 4; }
-.sg-copy   { grid-column: 5; }
-.sg-full   { grid-column: 1 / -1; }
-.sg-left   { grid-column: 1 / 4; }
-.sg-right  { grid-column: 4 / -1; padding-left: 3rem; }
-
-/* Word-by-word scrub — each word is a span */
-.word-scrub .word {
-  display: inline-block;
-  opacity: 0.2;
-  transition: none;
-}
-
-/* Ceiling blockquote */
-.ceiling-quote {
-  border-left: 1px solid var(--gray-40);
-  padding-left: 2rem;
-  margin-top: 1rem;
-}
-.ceiling-quote blockquote {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: clamp(1.4rem, 2.5vw, 2rem);
-  font-weight: 500;
-  line-height: 1.35;
-  color: var(--dark);
-  margin-bottom: 1rem;
-}
-.ceiling-quote cite {
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--gray-60);
-  font-style: normal;
-}
-
-/* ============================================================
-   SECTION — DARK (The Story)
-   ============================================================ */
-#story {
-  background: var(--dark);
-  color: var(--white);
-  padding: var(--section-py) 0;
-}
-.story-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-  margin-top: 4rem;
-  align-items: start;
-}
-.story-marks {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
-.mark {
-  border-top: 1px solid var(--gray-80);
-  padding-top: 1.5rem;
-}
-.mark b {
-  display: block;
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white);
-  margin-bottom: 0.6rem;
-}
-.mark span {
-  font-size: 0.9rem;
-  font-weight: 300;
-  line-height: 1.65;
-  color: var(--gray-60);
-}
-.video-wrap {
-  position: relative;
-  padding-bottom: 177.78%; /* 9:16 short */
-  height: 0;
-  overflow: hidden;
-  background: var(--gray-80);
-}
-.video-wrap.ratio-16x9 {
-  padding-bottom: 56.25%;
-}
-.video-wrap iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-.video-label {
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--gray-60);
-  margin-top: 0.8rem;
-}
-
-/* ============================================================
-   SECTION — LIGHT (The Proof)
-   ============================================================ */
-#proof {
-  background: var(--light);
-  color: var(--dark);
-  padding: var(--section-py) 0;
-}
-.proof-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 5rem;
-  margin-top: 4rem;
-  align-items: start;
-}
-.proof-sub {
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--gray-60);
-  margin-top: 0.8rem;
-  margin-bottom: 2rem;
-}
-.proof-timeline {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  margin-top: 2.5rem;
-  border-top: 1px solid var(--gray-40);
-}
-.proof-timeline > div {
-  padding: 1.5rem 1.5rem 1.5rem 0;
-  border-right: 1px solid var(--gray-40);
-  border-bottom: 1px solid var(--gray-40);
-}
-.proof-timeline > div:nth-child(even) {
-  padding-left: 1.5rem;
-  border-right: none;
-}
-.ph {
-  display: block;
-  font-size: 0.68rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--gray-60);
-  margin-bottom: 0.4rem;
-}
-.proof-timeline b {
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  margin-bottom: 0.4rem;
-}
-.proof-timeline p {
-  font-size: 0.82rem;
-  font-weight: 300;
-  color: var(--gray-80);
-  line-height: 1.5;
-}
-
-/* ============================================================
-   SECTION — DARK (In Their Words)
-   ============================================================ */
-#testimonials {
-  background: var(--dark);
-  color: var(--white);
-  padding: var(--section-py) 0;
-}
-.featured-quote {
-  display: block;
-  padding: 2.5rem;
-  border: 1px solid var(--gray-80);
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-.featured-quote blockquote {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: clamp(1.1rem, 2vw, 1.5rem);
-  font-weight: 400;
-  line-height: 1.5;
-  color: var(--white);
-  margin-bottom: 1rem;
-}
-.featured-quote-screenshot {
-  max-width: 540px;
-}
-.featured-quote-screenshot img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
-  box-shadow: 0 8px 40px rgba(0,0,0,0.4);
-}
-.review-caption {
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--gray-60);
-  margin-top: 1rem;
-}
-.featured-quote cite {
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--gray-60);
-  font-style: normal;
-}
-.badge {
-  font-size: 0.68rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--gray-60);
-  border: 1px solid var(--gray-80);
-  padding: 0.5rem 0.8rem;
-  white-space: nowrap;
-  align-self: start;
-}
-.shorts-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-.short-label {
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--gray-60);
-  margin-top: 0.8rem;
-}
-.fv-header {
-  margin-bottom: 1.5rem;
-}
-.fv-sub {
-  font-size: 0.82rem;
-  font-weight: 300;
-  color: var(--gray-60);
-  margin-top: 0.6rem;
-}
-
-/* ============================================================
-   SECTION — LIGHT (The Rules)
-   ============================================================ */
-#rules {
-  background: var(--light);
-  color: var(--dark);
-  padding: var(--section-py) 0;
-}
-.rules-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 4rem;
-  border-top: 1px solid var(--gray-40);
-}
-.rule-col {
-  padding: 2.5rem 2.5rem 2.5rem 0;
-  border-right: 1px solid var(--gray-40);
-}
-.rule-col:last-child { border-right: none; padding-right: 0; }
-.rule-col:not(:first-child) { padding-left: 2.5rem; }
-.rule-num {
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--gray-60);
-  margin-bottom: 1.2rem;
-}
-.rule-col h3 {
-  font-size: clamp(1rem, 1.8vw, 1.4rem);
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: -0.01em;
-  line-height: 1.1;
-  margin-bottom: 0.5rem;
-}
-.rule-sub {
-  font-size: 0.72rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--gray-60);
-  margin-bottom: 1.2rem;
-}
-.rule-col p {
-  font-size: 0.88rem;
-  font-weight: 300;
-  line-height: 1.7;
-  color: var(--gray-80);
-}
-
-/* ============================================================
-   SECTION — DARK (Final CTA)
-   ============================================================ */
-#cta {
-  background: var(--dark);
-  color: var(--white);
-  padding: clamp(7rem, 14vw, 12rem) 0;
-  text-align: center;
-}
-#cta .h2 { max-width: 14ch; margin: 0 auto 1.5rem; }
-.cta-sub {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: clamp(1.1rem, 2vw, 1.4rem);
-  color: var(--gray-60);
-  margin-bottom: 0.6rem;
-}
-.cta-note {
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--gray-60);
-  margin-bottom: 2.5rem;
-}
-
-/* ============================================================
-   FOOTER
-   ============================================================ */
-footer {
-  background: var(--dark);
-  border-top: 1px solid var(--gray-80);
-  padding: 3rem 0;
-}
-.foot-inner {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
-  gap: 3rem;
-  align-items: start;
-  margin-bottom: 3rem;
-}
-.foot-logo img { height: 32px; margin-bottom: 1rem; opacity: 0.7; }
-.foot-brand p {
-  font-size: 0.82rem;
-  font-weight: 300;
-  line-height: 1.65;
-  color: var(--gray-60);
-  max-width: 30ch;
-}
-.foot-col h5 {
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--gray-60);
-  margin-bottom: 1rem;
-}
-.foot-col a {
-  display: block;
-  font-size: 0.82rem;
-  font-weight: 300;
-  color: rgba(255,255,255,0.5);
-  margin-bottom: 0.5rem;
-  transition: color 0.2s;
-}
-.foot-col a:hover { color: var(--white); }
-.foot-base {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid var(--gray-80);
-  padding-top: 1.5rem;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-.foot-base span, .foot-base a {
-  font-size: 0.72rem;
-  letter-spacing: 0.04em;
-  color: var(--gray-60);
-}
-.foot-legal { display: flex; gap: 1.5rem; }
-
-/* ============================================================
-   SCROLL REVEAL — data-reveal elements
-   ============================================================ */
-[data-reveal] {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}
-[data-reveal].revealed {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* H2 line-by-line reveal */
-.h2-line-wrap { overflow: hidden; display: block; }
-.h2-line {
-  display: block;
-  transform: translateY(105%);
-  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.h2-line.revealed { transform: translateY(0); }
-
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
-@media (max-width: 1024px) {
-  .section-grid {
-    grid-template-columns: 1fr;
-  }
-  .sg-num, .sg-head, .sg-copy, .sg-full, .sg-left, .sg-right {
-    grid-column: 1;
-    padding-left: 0;
-  }
-  .sg-copy { margin-top: 3rem; }
-  .sg-right { padding-left: 0; margin-top: 3rem; }
-}
-@media (max-width: 900px) {
-  .hero-inner { grid-template-columns: 1fr; }
-  .hero-left { padding-top: 10rem; }
-  .hero-right { height: 60vw; }
-  .hero-portrait-wrap { height: 60vw; }
-  .story-grid, .proof-grid { grid-template-columns: 1fr; gap: 3rem; }
-  .rules-grid { grid-template-columns: 1fr; }
-  .rule-col { border-right: none; border-bottom: 1px solid var(--gray-40); padding: 2rem 0; }
-  .rule-col:last-child { border-bottom: none; }
-  .shorts-grid { grid-template-columns: 1fr; }
-  .featured-quote { grid-template-columns: 1fr; }
-  .foot-inner { grid-template-columns: 1fr; gap: 2rem; }
-  .nav-links, .nav-cta { display: none; }
-  .nav-hamburger { display: flex; }
-}
-@media (max-width: 600px) {
-  .proof-timeline { grid-template-columns: 1fr; }
-  .proof-timeline > div { border-right: none; }
-  .proof-timeline > div:nth-child(even) { padding-left: 0; }
-  .hero-ctas { flex-direction: column; }
-  .hero-ctas .btn { width: 100%; justify-content: center; }
-}
-</style>
-
-<!-- Schema.org -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"What is hypnotherapy? How does it work?","acceptedAnswer":{"@type":"Answer","text":"Hypnotherapy uses relaxation and focus to work on habits, emotions, or challenges. When you're deeply relaxed, your mind is more open to positive change — it's the key through the firewall between the conscious and subconscious mind."}},
-    {"@type":"Question","name":"Will I lose control during hypnosis?","acceptedAnswer":{"@type":"Answer","text":"No. You stay in control the whole time. You'll feel relaxed, but you can hear and respond to everything, and you won't do anything you don't want to."}},
-    {"@type":"Question","name":"Is hypnotherapy safe?","acceptedAnswer":{"@type":"Answer","text":"Yes — hypnosis is a natural state of relaxation you've likely experienced before, like daydreaming or being deeply focused on something."}},
-    {"@type":"Question","name":"How do I know if this will work for me?","acceptedAnswer":{"@type":"Answer","text":"If you're open to the process and ready to make changes, it can work well. Karim only works with serious candidates — and if you're not fully convinced after your first 1:1 session, your money comes back, no questions asked."}}
+    {"@type": "Question", "name": "What is hypnotherapy? How does it work?", "acceptedAnswer": {"@type": "Answer", "text": "Hypnotherapy uses relaxation and focus to help you work on habits, emotions, or challenges. When you're deeply relaxed, your mind is more open to positive changes."}},
+    {"@type": "Question", "name": "Will I lose control during hypnosis?", "acceptedAnswer": {"@type": "Answer", "text": "No, you'll stay in control the whole time. You'll feel relaxed, but you can hear and respond to everything, and you won't do anything you don't want to."}},
+    {"@type": "Question", "name": "What happens during a session?", "acceptedAnswer": {"@type": "Answer", "text": "We'll start by talking about what you want to work on. Then Karim guides you into a calm, relaxed state and gives you helpful suggestions to support the changes you're looking for."}},
+    {"@type": "Question", "name": "Is hypnotherapy safe?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, it's completely safe. Hypnosis is a natural state of relaxation that you've likely experienced before, like when you're daydreaming or really focused on something."}},
+    {"@type": "Question", "name": "Will I remember what happens?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, you'll remember everything we talk about. Hypnosis isn't sleep — it's more like a relaxed, focused state."}},
+    {"@type": "Question", "name": "How do I know if this will work for me?", "acceptedAnswer": {"@type": "Answer", "text": "If you're open to the process and ready to make changes, it can work well. We'll discuss your goals upfront and take it from there."}}
   ]
 }
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================
+   KARIM BOKTOR — "THE GAP"
+   Brand: black & white, exactly like karimboktor.com,
+   with ONE new accent — red. Red means fast. Red means
+   high performance. Red goes faster.
+   White pages · black ink · black bands · red line.
+   ========================================================== */
+:root{
+  --ink:#FAFAF8;          /* page background (white) */
+  --panel:#F1F1EE;        /* light panel */
+  --panel-2:#E9E9E5;      /* deeper light panel */
+  --paper:#0B0B0C;        /* primary text (black ink) */
+  --paper-dim:#45443F;    /* secondary text */
+  --mute:#807E78;         /* muted text */
+  --black:#0B0B0C;        /* true black — bands & blocks */
+  --white:#FAFAF8;
+  --red:#E8291C;
+  --red-deep:#B01B10;
+  --line:rgba(11,11,12,.12);
+  --line-strong:rgba(11,11,12,.26);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink);
+  color:var(--paper);
+  font-family:'Manrope',sans-serif;
+  font-size:16.5px;
+  line-height:1.7;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--red);color:var(--white)}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+
+h1,h2,h3,.display{
+  font-family:'Anton',sans-serif;
+  font-weight:400;
+  text-transform:uppercase;
+  letter-spacing:.015em;
+  line-height:1.02;
+}
+.kicker{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12px;
+  letter-spacing:.3em;
+  text-transform:uppercase;
+  color:var(--red);
+  display:flex;align-items:center;gap:14px;
+  margin-bottom:26px;
+}
+.kicker::before{content:"";width:34px;height:2px;background:var(--red)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 6vw}
+.narrow{max-width:840px}
+
+/* grain */
+.grain{position:fixed;inset:0;z-index:60;pointer-events:none;opacity:.04;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+/* scroll progress */
+.progress{position:fixed;top:0;left:0;height:3px;background:var(--red);width:0;z-index:70}
+
+/* ============ NAV ============ */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:18px 5vw;
+  background:linear-gradient(to bottom, rgba(250,250,248,.94), rgba(250,250,248,.82));
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.nav-brand-txt{font-family:'Anton',sans-serif;font-size:18px;letter-spacing:.06em;text-transform:uppercase;color:var(--paper)}
+.nav-links{display:flex;gap:30px;align-items:center;list-style:none}
+.nav-links a{font-size:13.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--paper-dim);transition:color .2s}
+.nav-links a:hover{color:var(--paper)}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  background:var(--red);color:var(--white);
+  font-family:'Manrope',sans-serif;font-weight:800;font-size:14px;
+  letter-spacing:.05em;text-transform:uppercase;
+  padding:15px 30px;border:none;border-radius:2px;cursor:pointer;text-decoration:none;
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 34px rgba(232,41,28,.35)}
+.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--paper);outline-offset:3px}
+.btn.ghost{background:transparent;border:1.5px solid var(--paper);color:var(--paper)}
+.btn.ghost:hover{border-color:var(--red);color:var(--red);box-shadow:none}
+.nav .btn{padding:11px 22px;font-size:12.5px}
+
+/* ============ HERO ============ */
+.hero{
+  min-height:100vh;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:150px 5vw 60px;
+  position:relative;
+}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 70% 45% at 75% 10%, rgba(232,41,28,.07), transparent 60%);}
+.hero-head{max-width:1180px;margin:0 auto;width:100%}
+.hero h1{font-size:clamp(3rem,8.4vw,7.4rem);max-width:13ch}
+.hero h1 .red{color:var(--red)}
+.hero-sub{
+  margin-top:28px;max-width:52ch;color:var(--paper-dim);
+  font-size:clamp(1.05rem,1.5vw,1.25rem);font-weight:500;
+}
+.hero-sub strong{color:var(--paper)}
+.hero-ctas{display:flex;gap:16px;margin-top:38px;flex-wrap:wrap}
+.trust-note{margin-top:18px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--mute);letter-spacing:.06em}
+
+/* ============ THE GAP — signature split ============ */
+.gap-widget{
+  max-width:1180px;margin:70px auto 0;width:100%;
+  position:relative;user-select:none;
+  border:1px solid var(--line-strong);border-radius:4px;
+  overflow:hidden;background:var(--white);
+  box-shadow:0 18px 60px rgba(11,11,12,.08);
+  touch-action:pan-y;
+}
+.gap-inner{position:relative;min-height:340px}
+.gap-side{position:absolute;inset:0;padding:44px 48px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.gap-side .tag{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.28em;text-transform:uppercase}
+.gap-side h3{font-size:clamp(1.7rem,3.4vw,2.9rem)}
+.gap-side p{max-width:36ch;font-size:1rem}
+.side-train{background:var(--white);z-index:1}
+.side-train .tag{color:var(--paper-dim)}
+.side-train p{color:var(--paper-dim)}
+.side-game{background:var(--black);z-index:2;clip-path:inset(0 0 0 55%);}
+.side-game .tag{color:var(--red)}
+.side-game h3{color:var(--white)}
+.side-game p{color:rgba(250,250,248,.65)}
+.side-game{align-items:flex-end;text-align:right}
+.side-game p{margin-left:auto}
+.gap-line{
+  position:absolute;top:0;bottom:0;left:55%;width:3px;background:var(--red);z-index:3;
+  transform:translateX(-50%);
+  box-shadow:0 0 22px rgba(232,41,28,.55);
+}
+.gap-handle{
+  position:absolute;top:50%;left:55%;transform:translate(-50%,-50%);z-index:4;
+  width:52px;height:52px;border-radius:50%;
+  background:var(--red);display:flex;align-items:center;justify-content:center;
+  cursor:ew-resize;border:none;color:var(--white);
+  font-size:18px;letter-spacing:-1px;font-weight:800;
+  box-shadow:0 6px 26px rgba(232,41,28,.45);
+}
+.gap-caption{
+  padding:16px 24px;border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+  font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--mute);
+}
+.gap-caption .close-note{color:var(--red)}
+
+/* ============ TICKER ============ */
+.ticker{overflow:hidden;padding:20px 0;background:var(--black)}
+.ticker-track{display:flex;gap:64px;white-space:nowrap;animation:tick 30s linear infinite;width:max-content}
+.ticker span{font-family:'Anton',sans-serif;font-size:20px;letter-spacing:.1em;text-transform:uppercase;color:rgba(250,250,248,.75)}
+.ticker span b{color:var(--red);font-weight:400}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ============ SECTIONS ============ */
+section{padding:15vh 0;position:relative}
+section.panel{background:var(--panel)}
+section h2{font-size:clamp(2rem,4.6vw,3.6rem);margin-bottom:30px;max-width:18ch}
+.lead{font-size:clamp(1.05rem,1.5vw,1.22rem);color:var(--paper-dim);max-width:58ch}
+.lead strong{color:var(--paper)}
+
+/* mirror list */
+.mirror-list{margin-top:52px;border-top:1px solid var(--line)}
+.mirror-item{
+  padding:26px 8px;border-bottom:1px solid var(--line);
+  display:grid;grid-template-columns:70px 1fr;gap:24px;align-items:baseline;
+  opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.22,1,.36,1), transform .8s cubic-bezier(.22,1,.36,1);
+}
+.mirror-item.in{opacity:1;transform:none}
+.mirror-item .num{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--mute)}
+.mirror-item p{font-size:clamp(1.05rem,1.7vw,1.35rem);font-weight:600;color:var(--paper-dim);max-width:56ch}
+.mirror-item.last{border-bottom:2px solid var(--red)}
+.mirror-item.last p{color:var(--paper)}
+.mirror-item.last .num{color:var(--red)}
+.pullquote{
+  margin-top:56px;padding-left:28px;border-left:3px solid var(--red);
+  font-family:'Anton',sans-serif;font-size:clamp(1.4rem,2.8vw,2.1rem);
+  text-transform:uppercase;letter-spacing:.02em;line-height:1.15;max-width:26ch;
+}
+.pullquote span{color:var(--red)}
+
+/* proof strip */
+.proof{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(250,250,248,.14);margin-top:0}
+.proof-cell{background:var(--black);padding:44px 34px;text-align:center}
+.proof-cell .big{font-family:'Anton',sans-serif;font-size:clamp(2.4rem,5vw,4rem);color:var(--white)}
+.proof-cell .big em{color:var(--red);font-style:normal}
+.proof-cell .label{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(250,250,248,.55);margin-top:10px}
+
+/* seen-in */
+.seen{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.seen a{
+  font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--paper-dim);text-decoration:none;border:1px solid var(--line-strong);
+  padding:10px 18px;border-radius:2px;transition:border-color .2s,color .2s;
+}
+.seen a:hover{border-color:var(--red);color:var(--paper)}
+
+/* guide */
+.guide-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:start;margin-top:20px}
+.portrait{
+  position:relative;border:1px solid var(--line-strong);aspect-ratio:4/5;
+  background:var(--panel-2);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;
+}
+.portrait::after{content:"";position:absolute;top:-10px;left:-10px;width:44px;height:44px;border-top:3px solid var(--red);border-left:3px solid var(--red)}
+.portrait span{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--mute);letter-spacing:.08em;max-width:26ch;line-height:1.8}
+.guide-copy p{color:var(--paper-dim);margin-bottom:20px}
+.guide-copy p strong{color:var(--paper)}
+.turn{
+  margin:30px 0;padding:26px 30px;background:var(--black);color:var(--white);border-left:3px solid var(--red);
+  font-family:'Anton',sans-serif;font-size:clamp(1.2rem,2.2vw,1.65rem);text-transform:uppercase;line-height:1.2;
+}
+.creds{list-style:none;margin-top:26px;border-top:1px solid var(--line)}
+.creds li{padding:13px 4px;border-bottom:1px solid var(--line);font-size:.98rem;color:var(--paper-dim);display:flex;gap:14px}
+.creds li::before{content:"—";color:var(--red);font-weight:800}
+
+/* plan */
+.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px}
+.plan-card{
+  background:var(--white);border:1px solid var(--line);padding:40px 32px;position:relative;overflow:hidden;
+  transition:transform .25s ease,border-color .25s ease;
+}
+.plan-card:hover{transform:translateY(-5px);border-color:var(--line-strong)}
+.plan-card .ghost{
+  position:absolute;top:-24px;right:-6px;font-family:'Anton',sans-serif;font-size:120px;
+  color:transparent;-webkit-text-stroke:1px rgba(11,11,12,.12);line-height:1;pointer-events:none;
+}
+.plan-card h3{font-size:1.35rem;margin-bottom:14px}
+.plan-card p{color:var(--paper-dim);font-size:.98rem}
+.plan-card .walk{margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:.92rem;color:var(--paper)}
+.plan-card .walk b{color:var(--red);font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:11px;letter-spacing:.2em;text-transform:uppercase;display:block;margin-bottom:6px}
+
+/* offers */
+.offer-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:24px;margin-top:50px}
+.offer-card{border:1px solid var(--line);padding:44px 40px;background:var(--white);display:flex;flex-direction:column;gap:16px}
+.offer-card.flag{border:2px solid var(--red);background:var(--white);position:relative;box-shadow:0 18px 50px rgba(232,41,28,.1)}
+.badge{
+  position:absolute;top:-13px;left:36px;background:var(--red);color:var(--white);
+  font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  padding:5px 14px;border-radius:2px;
+}
+.offer-card h3{font-size:clamp(1.4rem,2.4vw,1.9rem)}
+.price{font-family:'Anton',sans-serif;font-size:clamp(2.2rem,4vw,3.2rem);color:var(--paper)}
+.price small{font-family:'Manrope',sans-serif;font-size:.95rem;color:var(--mute);font-weight:600;letter-spacing:0;text-transform:none}
+.offer-card ul{list-style:none;border-top:1px solid var(--line);margin-top:6px}
+.offer-card li{padding:11px 0;border-bottom:1px solid var(--line);color:var(--paper-dim);font-size:.96rem;display:flex;gap:12px}
+.offer-card li::before{content:"→";color:var(--red)}
+.offer-card .btn{align-self:flex-start;margin-top:12px}
+.stack{display:flex;flex-direction:column;gap:24px;justify-content:center}
+.offer-mini{border:1px solid var(--line);padding:32px;background:var(--white)}
+.offer-mini h4{font-family:'Anton',sans-serif;font-size:1.15rem;text-transform:uppercase;margin-bottom:8px}
+.offer-mini p{color:var(--paper-dim);font-size:.94rem;margin-bottom:16px}
+.offer-mini a{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);text-decoration:none}
+.offer-mini a:hover{text-decoration:underline}
+
+/* fork */
+.fork{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:50px}
+.fork-side{padding:44px 38px;border:1px dashed var(--line-strong)}
+.fork-side.bad{color:var(--mute)}
+.fork-side.bad h3{color:var(--paper-dim);filter:blur(.4px)}
+.fork-side.good{border:2px solid var(--red);background:var(--white)}
+.fork-side h3{font-size:1.4rem;margin-bottom:18px}
+.fork-side ul{list-style:none}
+.fork-side li{padding:10px 0;border-bottom:1px solid var(--line);font-size:.97rem}
+.fork-side.good li{color:var(--paper-dim)}
+.fork-side.good li b{color:var(--paper)}
+
+/* results */
+.result-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:50px}
+.result-card{background:var(--white);border:1px solid var(--line);padding:38px 34px}
+.result-card blockquote{font-size:1.05rem;color:var(--paper);font-weight:600;line-height:1.6;margin-bottom:18px}
+.result-card .who{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.result-card .tagline{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);color:var(--red);font-size:.88rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.result-note{margin-top:26px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--mute);letter-spacing:.05em}
+.athlete-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:34px}
+.vcard{
+  border:0;padding:0;background:none;text-align:left;cursor:pointer;
+  display:flex;flex-direction:column;gap:14px;font-family:inherit;
+}
+.vcard-media{
+  position:relative;aspect-ratio:3/4;overflow:hidden;border-radius:2px;
+  background:var(--panel-2);box-shadow:0 14px 40px rgba(11,11,12,.14);
+}
+.vcard-media img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(.22,1,.36,1)}
+.vcard:hover .vcard-media img{transform:scale(1.04)}
+.vcard-media::after{content:"";position:absolute;inset:0;background:linear-gradient(to top, rgba(11,11,12,.5), transparent 45%);pointer-events:none}
+.play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;
+  width:66px;height:66px;border-radius:50%;background:var(--red);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 30px rgba(232,41,28,.5);transition:transform .25s ease;
+}
+.vcard:hover .play{transform:translate(-50%,-50%) scale(1.09)}
+.play svg{width:22px;height:22px;fill:var(--white);margin-left:4px}
+.vcard-len{
+  position:absolute;right:12px;bottom:12px;z-index:2;
+  font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;
+  color:var(--white);background:rgba(11,11,12,.6);padding:4px 9px;border-radius:2px;
+}
+.vcard-name{font-family:'Anton',sans-serif;font-size:1.15rem;text-transform:uppercase;letter-spacing:.03em;color:var(--paper)}
+.vcard-meta{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-top:-8px}
+.vcard-quote{color:var(--paper-dim);font-size:.97rem;font-weight:600;border-left:2px solid var(--red);padding-left:14px}
+/* name plate — credit without a photo */
+.name-plate{
+  margin-top:34px;border:1px solid var(--line-strong);background:var(--white);
+  padding:34px 34px;display:flex;flex-direction:column;gap:8px;position:relative;
+}
+.name-plate::after{content:"";position:absolute;top:-1px;left:-1px;width:5px;height:58px;background:var(--red)}
+.np-name{font-family:'Anton',sans-serif;font-size:clamp(1.5rem,3vw,2.2rem);text-transform:uppercase;letter-spacing:.03em}
+.np-meta{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+.np-note{color:var(--paper-dim);font-size:.97rem;font-weight:600}
+/* modal */
+.vmodal{
+  position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;
+  background:rgba(11,11,12,.94);padding:4vh 5vw;
+}
+.vmodal.open{display:flex}
+.vmodal video{max-width:100%;max-height:88vh;border-radius:3px;box-shadow:0 30px 90px rgba(0,0,0,.6)}
+.vclose{
+  position:absolute;top:22px;right:26px;width:46px;height:46px;border-radius:50%;
+  background:transparent;border:1.5px solid rgba(250,250,248,.4);color:var(--white);
+  font-size:22px;cursor:pointer;line-height:1;
+}
+.vclose:hover{border-color:var(--red);color:var(--red)}
+
+/* beyond */
+.beyond{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:50px}
+.beyond-card{border:1px solid var(--line);padding:36px 30px;background:var(--white);transition:border-color .2s, transform .25s ease}
+.beyond-card:hover{border-color:var(--line-strong);transform:translateY(-4px)}
+.beyond-card h3{font-size:1.2rem;margin-bottom:10px}
+.beyond-card p{color:var(--paper-dim);font-size:.94rem;margin-bottom:18px}
+.beyond-card a{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);text-decoration:none}
+.beyond-card a:hover{text-decoration:underline}
+
+/* faq */
+details{border-bottom:1px solid var(--line)}
+details summary{
+  cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;
+  padding:24px 4px;font-weight:700;font-size:1.05rem;color:var(--paper);
+}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";font-family:'Anton',sans-serif;color:var(--red);font-size:24px;transition:transform .25s ease}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 4px 24px;color:var(--paper-dim);max-width:64ch}
+.faq-wrap{margin-top:40px;border-top:1px solid var(--line)}
+
+/* final cta */
+.final{
+  text-align:center;padding:18vh 6vw;position:relative;overflow:hidden;background:var(--black);color:var(--white);
+}
+.final h2{color:var(--white)}
+.final .lead{color:rgba(250,250,248,.7)}
+.final .trust-note{color:rgba(250,250,248,.5)}
+.final::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 50% 100%, rgba(232,41,28,.14), transparent 65%);pointer-events:none}
+.final h2{margin:0 auto 18px;max-width:16ch}
+.final .lead{margin:0 auto 40px}
+
+/* footer */
+footer{padding:80px 6vw 40px;background:var(--black);color:var(--white)}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:44px;max-width:1180px;margin:0 auto}
+.foot-grid p{color:rgba(250,250,248,.55);font-size:.92rem;max-width:36ch}
+.foot-grid h5{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(250,250,248,.75);margin-bottom:16px}
+.foot-grid ul{list-style:none}
+.foot-grid li{margin-bottom:10px}
+.foot-grid a{color:rgba(250,250,248,.6);text-decoration:none;font-size:.94rem}
+.foot-grid a:hover{color:var(--white)}
+.wordmark{
+  font-family:'Anton',sans-serif;font-size:clamp(2.6rem,10vw,8rem);text-transform:uppercase;text-align:center;
+  color:transparent;-webkit-text-stroke:1px rgba(250,250,248,.25);margin:70px 0 30px;line-height:1;
+  transition:color .4s ease;cursor:default;
+}
+.wordmark:hover{color:var(--red);-webkit-text-stroke:1px var(--red)}
+.legal{text-align:center;font-family:'IBM Plex Mono',monospace;font-size:11px;color:rgba(250,250,248,.45);letter-spacing:.08em;line-height:2}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal[data-d="1"]{transition-delay:.08s}.reveal[data-d="2"]{transition-delay:.16s}.reveal[data-d="3"]{transition-delay:.24s}
+
+/* responsive */
+@media(max-width:980px){
+  .guide-grid,.offer-grid,.fork,.result-grid{grid-template-columns:1fr}
+  .plan-grid,.beyond{grid-template-columns:1fr}
+  .proof{grid-template-columns:1fr}
+  .nav-links li:not(.cta-li){display:none}
+  .athlete-strip{grid-template-columns:1fr;max-width:420px;margin-left:auto;margin-right:auto}
+  .foot-grid{grid-template-columns:1fr}
+  .gap-side{padding:32px 26px}
+}
+@media(max-width:720px){
+  section{padding:11vh 0}
+  .hero{padding-top:120px}
+}
+
+/* reduced motion */
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .ticker-track{animation:none}
+  .reveal,.mirror-item{opacity:1 !important;transform:none !important;transition:none !important}
+  .btn:hover,.plan-card:hover,.beyond-card:hover{transform:none}
+  .wordmark{transition:none}
+}
+</style>
 </head>
 <body>
 
-<!-- ============================================================
-     LOADER
-     ============================================================ -->
-<div id="loader" aria-hidden="true">
-  <span class="loader-label">The Boktor Method</span>
-  <div class="loader-count" id="loader-count">0</div>
-  <div class="loader-bar-wrap">
-    <div class="loader-bar" id="loader-bar"></div>
-  </div>
-</div>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
 
-<!-- Custom cursor -->
-<div id="cursor" aria-hidden="true"></div>
-
-<!-- Scroll progress -->
-<div id="progress" role="progressbar" aria-label="Page scroll progress"></div>
-
-<!-- Sticky bottom bar -->
-<div id="sticky-bar">
-  <a class="btn btn-white" href="https://karimboktor.com/breakthrough">Apply for the Roster</a>
-</div>
-
-<!-- Mobile menu -->
-<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
-  <button class="mm-close" id="mm-close" aria-label="Close menu">✕</button>
-  <a href="#ceiling" class="mm-link">The Ceiling</a>
-  <a href="#story" class="mm-link">The Story</a>
-  <a href="#proof" class="mm-link">The Proof</a>
-  <a href="#testimonials" class="mm-link">Evidence</a>
-  <a href="#rules" class="mm-link">The Rules</a>
-  <a href="https://karimboktor.com/breakthrough" class="mm-cta">Apply for the Roster</a>
-</div>
-
-<!-- ============================================================
-     NAV
-     ============================================================ -->
-<nav id="nav" aria-label="Main navigation">
-  <a class="nav-logo" href="#hero" aria-label="Karim Boktor — back to top">
-    <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/EEBzP9YC3rcjMAgCWpCu/media/68d7ce36c94baca1fa6db803.png" alt="KB monogram logo">
+<nav>
+  <a class="nav-brand" href="#top">
+    <img src="assets/kb-mark-onlight.png" alt="Karim Boktor" width="400" height="241" style="height:38px;width:auto;display:block">
+    <span class="nav-brand-txt">Karim&nbsp;Boktor</span>
   </a>
-  <div class="nav-links" role="list">
-    <a href="#ceiling" role="listitem">The Ceiling</a>
-    <a href="#story" role="listitem">The Story</a>
-    <a href="#proof" role="listitem">The Proof</a>
-    <a href="#testimonials" role="listitem">Evidence</a>
-    <a href="#rules" role="listitem">The Rules</a>
-  </div>
-  <a class="btn btn-outline-white nav-cta" href="https://karimboktor.com/breakthrough">Apply for the Roster</a>
-  <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
-    <span></span><span></span>
-  </button>
+  <ul class="nav-links">
+    <li><a href="#problem">The Gap</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#method">The Method</a></li>
+    <li><a href="https://www.karimboktor.com/speaking">Hire Karim to Speak</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <!-- ⚠️ TODO: point this at the live program landing page URL once deployed -->
+    <li class="cta-li"><a class="btn" href="play-the-way-you-train.html">Apply to Work With Karim</a></li>
+  </ul>
 </nav>
 
-<!-- ============================================================
-     HERO
-     ============================================================ -->
-<section id="hero" aria-labelledby="hero-h1">
-  <div class="hero-inner">
-    <!-- Left: text -->
-    <div class="hero-left">
-      <span class="hero-eyebrow">Performance Hypnotherapy · By Private Application</span>
-
-      <h1 class="h1" id="hero-h1" aria-label="The stats say you've already arrived. You know you haven't.">
-        <span class="h1-wrap"><span class="h1-line" id="hl1">The stats say</span></span>
-        <span class="h1-wrap"><span class="h1-line" id="hl2">you've already</span></span>
-        <span class="h1-wrap"><span class="h1-line" id="hl3">arrived.</span></span>
-        <span class="h1-wrap"><span class="h1-line accent" id="hl5">You know you haven't.</span></span>
-      </h1>
-
-      <p class="hero-pull" id="hero-pull">Because the gap isn't in your stats. It's in your subconscious.</p>
-
-      <div class="hero-ctas" id="hero-ctas">
-        <a class="btn btn-white" href="https://karimboktor.com/breakthrough">Apply for the Roster</a>
-        <a class="btn btn-outline-white" href="#proof">Examine the Proof</a>
-      </div>
-
-      <div class="hero-scroll-cue" id="hero-scroll-cue" aria-hidden="true">
-        <span class="scroll-cue-text">Keep scrolling to locate the gap.</span>
-        <span class="scroll-cue-line"></span>
-      </div>
+<!-- ============ HERO — speaks to the athlete, not about Karim ============ -->
+<header class="hero" id="top">
+  <div class="hero-head">
+    <div class="kicker">Mental Performance · Elite Athletes</div>
+    <h1>Play the way you train.<br><span class="red">Every single game.</span></h1>
+    <p class="hero-sub">In training you're loose, sharp, untouchable. Then game day hits and something changes. <strong>That's not a mindset problem — it's a subconscious pattern, and it's fixable fast.</strong> Calm, clear and confident on game day, in 30 days or less.</p>
+    <div class="hero-ctas">
+      <a class="btn" href="play-the-way-you-train.html">Apply to Work With Karim</a>
+      <a class="btn ghost" href="https://www.karimboktor.com/contact">Book a Free Breakthrough Call</a>
     </div>
+    <p class="trust-note">Mental performance coach to elite athletes · TEDx speaker · Founder, The Boktor Method™</p>
+    <p class="trust-note" style="margin-top:8px">Application-only coaching · Melbourne, worldwide via Zoom</p>
+  </div>
 
-    <!-- Right: portrait -->
-    <div class="hero-right">
-      <div class="hero-portrait-wrap">
-        <img
-          src="karim-portrait.jpg"
-          alt="Karim Boktor — Performance Hypnotherapist"
-          id="hero-img"
-          onload="this.classList.add('loaded')"
-          onerror="this.style.display='none';document.getElementById('hero-placeholder').style.display='flex'">
-        <div class="hero-portrait-placeholder" id="hero-placeholder" style="display:none">
-          Portrait of Karim Boktor<br><br>Save as karim-portrait.jpg
-        </div>
+  <!-- SIGNATURE: THE GAP — drag the red line to close the gap between Tuesday and Saturday -->
+  <div class="gap-widget" id="gapWidget" aria-label="Interactive: the gap between training and game day">
+    <div class="gap-inner">
+      <div class="gap-side side-train">
+        <span class="tag">Tuesday · Training</span>
+        <h3>Loose. Sharp.<br>Untouchable.</h3>
+        <p>Everything comes easy. Your coach sees an A-player. So do you.</p>
       </div>
+      <div class="gap-side side-game" id="gameSide">
+        <span class="tag">Saturday · Game Day</span>
+        <h3>Tight. Hesitant.<br>In your head.</h3>
+        <p>One mistake and you're trapped there for the rest of the game.</p>
+      </div>
+      <div class="gap-line" id="gapLine" aria-hidden="true"></div>
+      <button class="gap-handle" id="gapHandle" aria-label="Drag to move the line between training and game day">⇤⇥</button>
+    </div>
+    <div class="gap-caption">
+      <span>The red line is the gap. Karim closes it.</span>
+      <span class="close-note" id="closeNote">Drag the line →</span>
     </div>
   </div>
-</section>
+</header>
 
-<!-- ============================================================
-     MARQUEE TICKER
-     ============================================================ -->
-<div class="marquee-section" aria-hidden="true">
-  <div class="marquee-track">
-    <div class="marquee-inner">
-      <span>By Private Application</span><span class="dot">●</span>
-      <span>The World's Top 1%</span><span class="dot">●</span>
-      <span>NFL Super Bowl Starters</span><span class="dot">●</span>
-      <span>Elite Athletes</span><span class="dot">●</span>
-      <span>Founders &amp; Decision Makers</span><span class="dot">●</span>
-      <span>The Boktor Method</span><span class="dot">●</span>
-      <span>Melbourne → Worldwide</span><span class="dot">●</span>
-      <span>By Private Application</span><span class="dot">●</span>
-      <span>The World's Top 1%</span><span class="dot">●</span>
-      <span>NFL Super Bowl Starters</span><span class="dot">●</span>
-      <span>Elite Athletes</span><span class="dot">●</span>
-      <span>Founders &amp; Decision Makers</span><span class="dot">●</span>
-      <span>The Boktor Method</span><span class="dot">●</span>
-      <span>Melbourne → Worldwide</span><span class="dot">●</span>
-    </div>
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>The noise <b>goes quiet ·</b></span><span>The hesitation <b>stops ·</b></span><span>The pressure <b>backs off ·</b></span><span>The overthinking <b>switches off ·</b></span>
+    <span>The noise <b>goes quiet ·</b></span><span>The hesitation <b>stops ·</b></span><span>The pressure <b>backs off ·</b></span><span>The overthinking <b>switches off ·</b></span>
   </div>
 </div>
 
-<!-- ============================================================
-     ( 02 ) THE CEILING — Light section
-     ============================================================ -->
-<section id="ceiling" aria-labelledby="ceiling-h2">
-  <div class="wrap">
-    <div class="section-grid">
-      <div class="sg-num">
-        <span class="sec-num" data-reveal>( 02 )</span>
-      </div>
-      <div class="sg-head">
-        <h2 class="h2" id="ceiling-h2">
-          <span class="h2-line-wrap"><span class="h2-line">You have the</span></span>
-          <span class="h2-line-wrap"><span class="h2-line">results. So why</span></span>
-          <span class="h2-line-wrap"><span class="h2-line">does it feel</span></span>
-          <span class="h2-line-wrap"><span class="h2-line"><em>like a plateau?</em></span></span>
-        </h2>
-        <p class="lede word-scrub" style="margin-top:2.5rem" data-scrub>You've built the career. You've secured the contracts. You've outperformed everyone they put in front of you. On paper, you are at the absolute apex of your field. But inside, there is a quiet, persistent resistance — a hesitation before the big play, a sense that you are leaving something on the table.</p>
-        <p class="lede word-scrub" style="margin-top:1.2rem" data-scrub>You've tried to fix it the way you fix everything else: more reps, better strategy, harder work. But the gap hasn't closed. Because the gap isn't a lack of skill. It's a subconscious pattern. And until you locate it, no amount of conscious effort will remove it.</p>
-      </div>
-      <div class="sg-copy ceiling-quote" data-reveal>
-        <blockquote>"Everyone else sees the stats. You feel the gap. That gap lives in the 95% nobody else has access to."</blockquote>
-        <cite>— Karim Boktor</cite>
-      </div>
+<!-- ============ 01 THE PROBLEM — mirror list ============ -->
+<section id="problem">
+  <div class="wrap narrow">
+    <div class="kicker">01 · The Gap</div>
+    <h2 class="reveal">The player your coach sees Tuesday isn't the player who shows up Saturday.</h2>
+    <p class="lead reveal" data-d="1">You've got the skills and the stats. You're already doing extra work on the side. And still, the pressure decides which version of you plays.</p>
+
+    <div class="mirror-list">
+      <div class="mirror-item"><span class="num">/01</span><p>Warming up, and the nerves are already writing the story of the game before the first whistle.</p></div>
+      <div class="mirror-item"><span class="num">/02</span><p>One mistake, and you spend the next three quarters replaying it instead of playing.</p></div>
+      <div class="mirror-item"><span class="num">/03</span><p>Your performance swings week to week — and you can't explain why to your coach, or to yourself.</p></div>
+      <div class="mirror-item"><span class="num">/04</span><p>You've done the breathing, the visualisation, the self-talk. It helps at training. It disappears under lights.</p></div>
+      <div class="mirror-item last"><span class="num">/05</span><p>You know you have more in you. That's the part that keeps you up — not the mistake. The ceiling.</p></div>
     </div>
+
+    <div class="pullquote reveal">It's not a mindset problem. <span>It's a subconscious one.</span></div>
   </div>
 </section>
 
-<!-- ============================================================
-     ( 03 ) THE STORY — Dark section
-     ============================================================ -->
-<section id="story" aria-labelledby="story-h2">
+<!-- ============ PROOF STRIP — real numbers only ============ -->
+<section style="padding:0;background:var(--black)">
+  <div class="proof">
+    <div class="proof-cell reveal"><div class="big"><em>1,000+</em></div><div class="label">Lives changed through The Boktor Method</div></div>
+    <div class="proof-cell reveal" data-d="1"><div class="big">TEDx</div><div class="label">International TEDx speaker</div></div>
+    <div class="proof-cell reveal" data-d="2"><div class="big">30 <em>Days</em></div><div class="label">Calm, clear, confident — or he keeps working with you</div></div>
+  </div>
+</section>
+
+<!-- ============ 02 THE GUIDE — empathy first, authority second ============ -->
+<section id="about">
   <div class="wrap">
-    <span class="sec-num" data-reveal>( 03 )</span>
-    <h2 class="h2" id="story-h2">
-      <span class="h2-line-wrap"><span class="h2-line">The architect</span></span>
-      <span class="h2-line-wrap"><span class="h2-line">of the</span></span>
-      <span class="h2-line-wrap"><span class="h2-line"><em>invisible exit.</em></span></span>
-    </h2>
-    <div class="story-grid">
-      <div class="story-copy">
-        <p class="body-text word-scrub" data-scrub>Karim Boktor knows exactly what it feels like to hit a wall that hard work can't break. He spent thirty years trapped beneath one. A failing business, a newborn son, and a $100,000 MBA that couldn't solve the problem. The harder he pushed, the tighter the trap became.</p>
-        <p class="body-text word-scrub" style="margin-top:1.2rem" data-scrub>The breakthrough didn't come from a new strategy. It came when he realized the bottleneck was never the business — it was the subconscious architecture of the man running it.</p>
-        <p class="body-text word-scrub" style="margin-top:1.2rem" data-scrub>When Karim learned to rewire the 95% of his mind that conscious effort couldn't reach, the hesitation vanished. That personal breakthrough became the foundation of The Boktor Method.</p>
-        <p class="body-text word-scrub" style="margin-top:1.2rem" data-scrub>Today, the man who broke his own ceiling is the private, retained hypnotherapist for the highest-performing athletes and executives on the planet. He doesn't teach strategy. He removes the anchor.</p>
-
-        <div style="margin-top:2.5rem" data-reveal>
-          <div class="video-wrap">
-            <iframe src="https://www.youtube.com/embed/mg8-uSfyh7U" title="Karim Boktor explains the subconscious" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-          </div>
-          <p class="video-label">The subconscious explained — Karim Boktor</p>
-        </div>
+    <div class="kicker">02 · Your Coach's Coach</div>
+    <div class="guide-grid">
+      <div class="portrait reveal">
+        <!-- TODO: replace with the photo of Karim in his cap — "the guy who gives a damn about sport."
+             Suggested path: assets/karim-cap.jpg — Karim mentioned on the 17 July call he'd send this through. -->
+        <img src="assets/karim-portrait.jpg" alt="Karim Boktor" width="1200" height="1500" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1)" loading="lazy">
       </div>
-
-      <div class="story-marks">
-        <div class="mark" data-reveal>
-          <b>Son of a warrior</b>
-          <span>His father fled persecution in Egypt with three kids, no money, no language — arriving in Australia homeless, a proud business owner now washing dishes to feed his family.</span>
-        </div>
-        <div class="mark" data-reveal>
-          <b>Every label under the sun</b>
-          <span>ADHD. Dyslexia. The kid who couldn't speak, couldn't read, didn't have friends, was bullied. Told in a hundred ways what his ceiling was.</span>
-        </div>
-        <div class="mark" data-reveal>
-          <b>Rock bottom, in Richmond</b>
-          <span>Running a business, first child just born, nobody sleeping, 140 kilos, couldn't pay rent or wages. A $100,000 MBA that couldn't solve the problem.</span>
-        </div>
-        <div class="mark" data-reveal>
-          <b>The exit</b>
-          <span>A two-week NLP course did what the MBA couldn't — because the bottleneck was never the business. It was the subconscious of the man running it.</span>
-        </div>
-        <div class="mark" data-reveal>
-          <b>The Boktor Method</b>
-          <span>Master practitioner. Master trainer. TEDx stage. Doctorate research. And a Super Bowl starter on speed dial.</span>
+      <div class="guide-copy">
+        <h2 class="reveal">He knows exactly what it's like when your body won't do what your mind knows.</h2>
+        <p class="reveal" data-d="1">As a kid, Karim had a severe stutter. He knew the words. He'd rehearsed them a thousand times. And when the moment came — when people were watching — they wouldn't come out. Teachers segregated him from his class. He grew up believing he wasn't smart, and carried that belief into his business and his relationships, where it quietly cost him both.</p>
+        <p class="reveal" data-d="2">Fixing it didn't come from trying harder. It came from going underneath — to the subconscious pattern running the show. That work changed his business, his marriage, and his life as a father.</p>
+        <div class="turn reveal">The stutter was never in his mouth. It was in his mind. Yours isn't in your legs either.</div>
+        <p class="reveal" data-d="1">That's why he calls what holds high performers back the <strong>"inner stutter"</strong> — you've trained the skill, and something invisible interrupts it right when it counts. Removing it is the entire job of The Boktor Method.</p>
+        <ul class="creds reveal" data-d="2">
+          <li>Founder of The Boktor Method™ — 1,000+ athletes, entrepreneurs &amp; executives</li>
+          <li>International TEDx speaker</li>
+          <li>MBA · Internationally recognised Master Trainer in NLP, Timeline Therapy &amp; Hypnotherapy</li>
+          <li>Practitioner of the Demartini Method</li>
+          <li>Based in Melbourne · Works with players and clubs worldwide</li>
+        </ul>
+        <div class="seen reveal" data-d="3">
+          <!-- ⚠️ TODO: Karim confirmed on the 17 July call these articles are published online.
+               Replace # with the real article URLs — clickable proof beats logos. -->
+          <a href="#">As seen in · Business Insider</a>
+          <a href="#">Auspreneur</a>
+          <a href="#">Inspirepreneur</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     ( 04 ) THE PROOF — Light section
-     ============================================================ -->
-<section id="proof" aria-labelledby="proof-h2">
+<!-- ============ 03 THE PLAN — 3 steps ============ -->
+<section class="panel" id="method">
   <div class="wrap">
-    <span class="sec-num" data-reveal>( 04 )</span>
-    <h2 class="h2" id="proof-h2">
-      <span class="h2-line-wrap"><span class="h2-line">When the gap</span></span>
-      <span class="h2-line-wrap"><span class="h2-line"><em>is removed.</em></span></span>
-    </h2>
-    <div class="proof-grid">
-      <div class="proof-copy">
-        <h3 class="h3" data-reveal>From the bench to the Super Bowl. <em>A 5.5× contract.</em></h3>
-        <p class="proof-sub" data-reveal>Flagship case study · NFL · Shared with the player's open permission</p>
-        <p class="body-text word-scrub" data-scrub>Jaylinn Hawkins possessed elite, top-tier physical skill. But at the apex of professional sport, skill is just the entry fee. The difference between sitting on the bench and starting in the Super Bowl is entirely mental.</p>
-        <p class="body-text word-scrub" style="margin-top:1rem" data-scrub>He was experiencing the exact same hesitation you feel right now. The classic signature of an invisible subconscious ceiling. Instead of running more drills or analyzing more tape, we bypassed the conscious mind entirely and rewired the 95% driving his hesitation.</p>
-        <p class="body-text word-scrub" style="margin-top:1rem" data-scrub>Within months, the hesitation was gone. He was named a starter. He played in the Super Bowl. And when the new contract arrived at more than five times his previous baseline, it wasn't a negotiation — it was the undeniable result of removing the subconscious anchor.</p>
-        <div class="proof-timeline" data-reveal>
-          <div><span class="ph">Before</span><b>On the bench</b><p>Elite skill, but hesitating in high-pressure moments. Contract: US$1.8M.</p></div>
-          <div><span class="ph">Months 1–3</span><b>Named starter</b><p>Subconscious barriers located and removed.</p></div>
-          <div><span class="ph">The season</span><b>Super Bowl</b><p>From the bench to starting on the biggest stage in world sport.</p></div>
-          <div><span class="ph">After</span><b>US$10M</b><p>A 5.5× contract off the back of the stats — not luck.</p></div>
-        </div>
+    <div class="kicker">03 · The Boktor Method</div>
+    <h2 class="reveal">Three steps. No candlelight journaling.</h2>
+    <p class="lead reveal" data-d="1">Most mindset work gives you techniques to practise on top of the problem. This goes underneath it — straight to the pattern.</p>
+    <div class="plan-grid">
+      <div class="plan-card reveal"><span class="ghost">01</span>
+        <h3>Find the Inner Stutter</h3>
+        <p>We connect the dots — where the hesitation actually comes from and why it fires under pressure but not at training.</p>
+        <div class="walk"><b>You walk away with</b>The real reason, named. Most players feel lighter from this alone.</div>
       </div>
-      <div data-reveal>
-        <div class="video-wrap">
-          <iframe src="https://www.youtube.com/embed/GvOH34-DPPI" title="Jaylinn Hawkins — from the bench to the Super Bowl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
-        </div>
-        <p class="video-label">Jaylinn Hawkins — Super Bowl starter</p>
+      <div class="plan-card reveal" data-d="1"><span class="ghost">02</span>
+        <h3>Remove It at the Source</h3>
+        <p>Using hypnotherapy and The Boktor Method™, we let go of the pattern at the subconscious level — where it actually lives.</p>
+        <div class="walk"><b>You walk away with</b>A shift you can feel in session one, then prove on the field within the week.</div>
+      </div>
+      <div class="plan-card reveal" data-d="2"><span class="ghost">03</span>
+        <h3>Play Free</h3>
+        <p>The early calm becomes your default. You trust your instincts without the split-second doubt. One error stays one error.</p>
+        <div class="walk"><b>You walk away with</b>The training version of you, on game day, every game day.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     ( 05 ) IN THEIR WORDS — Dark section
-     ============================================================ -->
-<section id="testimonials" aria-labelledby="testimonials-h2">
+<!-- ============ 04 OFFERS ============ -->
+<section id="work">
   <div class="wrap">
-    <span class="sec-num" data-reveal>( 05 )</span>
-    <h2 class="h2" id="testimonials-h2">
-      <span class="h2-line-wrap"><span class="h2-line">In</span></span>
-      <span class="h2-line-wrap"><span class="h2-line"><em>Their Words.</em></span></span>
-    </h2>
-    <p class="lede" data-reveal style="margin-top:1.5rem">The world's most demanding arenas. The highest stakes. The same invisible ceiling, permanently removed.</p>
-
-    <div class="featured-quote" data-reveal>
-      <div class="featured-quote-screenshot">
-        <img src="nick-bell.jpg" alt="Nick Bell Google Review — Shark Tank Australia investor & founder of WME — 5 stars" loading="lazy">
-        <p class="review-caption">Nick Bell &mdash; Shark Tank Australia investor &amp; founder of WME</p>
+    <div class="kicker">04 · Ways to Work With Karim</div>
+    <h2 class="reveal">Start free. Go all in when you're ready.</h2>
+    <div class="offer-grid">
+      <div class="offer-card flag reveal">
+        <span class="badge">The 4-Week Program</span>
+        <h3>Play the Way You Train</h3>
+        <div class="price">$3,000 <small>once, not month-to-month</small></div>
+        <p style="color:var(--paper-dim)">4 weeks, 1:1. Phase one: play without hesitation (days 1–7). Phase two: play with confidence (days 8–30). If we can't find an improvement after the first session, Karim keeps working with you until we do.</p>
+        <ul>
+          <li>1:1 sessions with Karim, built around your season</li>
+          <li>Results guarantee — he stays in your corner until it lands</li>
+          <li>Pay in full, split in two, or spread over 4 weeks</li>
+          <li>No contracts, no lock-ins</li>
+        </ul>
+        <a class="btn" href="play-the-way-you-train.html">Read the Full Offer &amp; Apply</a>
       </div>
-    </div>
-
-    <div class="shorts-grid">
-      <div class="short-item" data-reveal>
-        <div class="video-wrap">
-          <iframe src="https://www.youtube.com/embed/hSjPlHM9xN4" title="NFL rising star testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      <div class="stack">
+        <div class="offer-mini reveal" data-d="1">
+          <h4>Free Breakthrough Call</h4>
+          <p>Not sure where your gap is? Find your blind spot on a free call with Karim.</p>
+          <a href="https://www.karimboktor.com/contact">Book the call →</a>
         </div>
-        <p class="short-label">NFL Rising Star</p>
       </div>
-      <div class="short-item" data-reveal>
-        <div class="video-wrap">
-          <iframe src="https://www.youtube.com/embed/_kmZbIpNG2w" title="AFL player Harvey Johnston testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 THE FORK ============ -->
+<section class="panel">
+  <div class="wrap">
+    <div class="kicker">05 · Two Seasons From Now</div>
+    <h2 class="reveal">Same talent. Two very different careers.</h2>
+    <div class="fork">
+      <div class="fork-side bad reveal">
+        <h3>If nothing changes</h3>
+        <ul>
+          <li>Still brilliant at training, still inconsistent when it counts</li>
+          <li>Selectors call you "talented but unreliable"</li>
+          <li>More technique work stacked on top of a problem that isn't technical</li>
+          <li>Watching players with less skill get picked ahead of you</li>
+        </ul>
+      </div>
+      <div class="fork-side good reveal" data-d="1">
+        <h3>After the work</h3>
+        <ul>
+          <li><b>The noise goes quiet</b> — you play the game instead of your thoughts</li>
+          <li><b>One error stays one error</b></li>
+          <li><b>Composure that gets noticed</b> by coaches, selectors, and the A-players around you</li>
+          <li><b>Week-to-week consistency</b> your contract can be built on</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 RESULTS ============ -->
+<section id="results">
+  <div class="wrap">
+    <div class="kicker">06 · The Roster</div>
+    <h2 class="reveal">Hear it from the players themselves.</h2>
+    <p class="lead reveal" data-d="1">Not testimonials about a program. Athletes talking about what changed.</p>
+    <div class="athlete-strip" style="margin-top:50px">
+      <!-- Video facades: nothing loads until clicked (preload="none" + poster image).
+           TODO: confirm each athlete's team/level line with Karim before launch. -->
+      <button class="vcard reveal" data-video="assets/jaylinn-hawkins.mp4" aria-label="Play Jaylinn Hawkins video">
+        <div class="vcard-media">
+          <img src="assets/poster-jaylinn.jpg" alt="Jaylinn Hawkins, NFL" width="900" height="1200" loading="lazy" decoding="async">
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="vcard-len">1:32</span>
         </div>
-        <p class="short-label">Harvey Johnston — AFL Player</p>
-      </div>
+        <div class="vcard-name">Jaylinn Hawkins</div>
+        <div class="vcard-meta">NFL</div>
+        <p class="vcard-quote">"I feel free."</p>
+      </button>
+      <button class="vcard reveal" data-d="1" data-video="assets/josh-mccray.mp4" aria-label="Play Josh McCray video">
+        <div class="vcard-media">
+          <img src="assets/poster-josh.jpg" alt="Josh McCray, running back" width="900" height="1200" loading="lazy" decoding="async">
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="vcard-len">1:27</span>
+        </div>
+        <div class="vcard-name">Josh McCray</div>
+        <div class="vcard-meta">Running Back</div>
+        <p class="vcard-quote">"Having the right support."</p>
+      </button>
+      <button class="vcard reveal" data-d="2" data-video="assets/miles-davis.mp4" aria-label="Play Miles Davis video">
+        <div class="vcard-media">
+          <img src="assets/poster-miles.jpg" alt="Miles Davis, Utah State" width="900" height="1200" loading="lazy" decoding="async">
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="vcard-len">1:32</span>
+        </div>
+        <div class="vcard-name">Miles Davis</div>
+        <div class="vcard-meta">Utah State</div>
+        <p class="vcard-quote">"It's like I have a new pep in my step."</p>
+      </button>
     </div>
 
-    <div class="featured-video" data-reveal>
-      <div class="fv-header">
-        <span class="sec-num">Featured</span>
-        <h3 class="h3">What's really holding <em>your team back?</em></h3>
-        <p class="fv-sub">CUB Sydney — A room of decision makers learning how to unlock their ceiling.</p>
+    <!-- Harry: credited in type only. The available image was a phone photo of a Zoom call —
+         he was backlit and under-exposed, and no correction rendered him accurately. Do not re-add it.
+         Accolade is a PUBLIC FACT set as type — never paste the AFL/AFLCA award graphic (league + sponsor IP).
+         Replace this plate with a real photo or clip only if Karim obtains one. -->
+    <div class="name-plate reveal">
+      <span class="np-name">Harry Sheezel</span>
+      <span class="np-meta">AFL · 2024 AFL Coaches Association Best Young Player</span>
+      <span class="np-note">Also working with Karim.</span>
+    </div>
+
+    <p class="lead reveal">The method was built and proven long before it reached the field. Here's what it does when the pressure is a boardroom instead of a backline:</p>
+    <div class="result-grid">
+      <div class="result-card reveal">
+        <blockquote>"I've tried counselling and psychologists and other things. This went a lot deeper… It wasn't just a bandaid — it actually allowed me to deal with it, which other methods didn't do for me."</blockquote>
+        <div class="who">Maryanne · Business owner</div>
+        <div class="tagline">Deeper than talk. Faster than years of it.</div>
       </div>
-      <div class="video-wrap ratio-16x9">
-        <iframe src="https://www.youtube.com/embed/QOXYtQddXrU" title="CUB Sydney — What's really holding your team back" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      <div class="result-card reveal" data-d="1">
+        <blockquote>"My biggest issue was procrastination… I'd implemented systems and it didn't work. Just after one session, I've been more productive, more driven and more attentive to my family."</blockquote>
+        <div class="who">Jack · Executive</div>
+        <div class="tagline">Shift in session one. Just like the guarantee says.</div>
+      </div>
+    </div>
+    <p class="result-note">Testimonials from The Boktor Method client archive. Athlete case studies publishing soon.</p>
+  </div>
+</section>
+
+<!-- ============ BEYOND THE FIELD ============ -->
+<section class="panel" id="beyond">
+  <div class="wrap">
+    <div class="kicker">Beyond the Field</div>
+    <h2 class="reveal">The same method, off the field.</h2>
+    <p class="lead reveal" data-d="1">Clubs run on people. When the leaders think clearly, the players play freely.</p>
+    <div class="beyond">
+      <div class="beyond-card reveal">
+        <h3>Speaking</h3>
+        <p>TEDx-level keynotes on performance, pressure and the inner stutter — for clubs, conferences and teams.</p>
+        <a href="https://www.karimboktor.com/speaking">Book Karim to speak →</a>
+      </div>
+      <div class="beyond-card reveal" data-d="1">
+        <h3>Club Leaders &amp; Executives</h3>
+        <p>Workshops and 1:1 work for the people who keep the engine of the club running.</p>
+        <a href="https://www.karimboktor.com/workshops">Explore workshops →</a>
+      </div>
+      <div class="beyond-card reveal" data-d="2">
+        <h3>The Weekly Email</h3>
+        <p>No fluff. Sharp, 2-minute hits of insight to unlock your mind's true performance potential. One email a week.</p>
+        <a href="https://www.karimboktor.com/contact">Sign up →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     ( 06 ) THE RULES — Light section
-     ============================================================ -->
-<section id="rules" aria-labelledby="rules-h2">
-  <div class="wrap">
-    <span class="sec-num" data-reveal>( 06 )</span>
-    <h2 class="h2" id="rules-h2">
-      <span class="h2-line-wrap"><span class="h2-line">How the</span></span>
-      <span class="h2-line-wrap"><span class="h2-line"><em>roster operates.</em></span></span>
-    </h2>
-    <div class="rules-grid">
-      <div class="rule-col" data-reveal>
-        <div class="rule-num">01 /</div>
-        <h3>A strictly closed roster.</h3>
-        <div class="rule-sub">Absolute precision. Zero dilution.</div>
-        <p>Karim maintains a fiercely protected, low-volume private roster. When you are accepted, you have his undivided access — mid-season, pre-game, or hours before the acquisition. This is not a coaching program. This is elite private counsel.</p>
-      </div>
-      <div class="rule-col" data-reveal>
-        <div class="rule-num">02 /</div>
-        <h3>Eradicated, not managed.</h3>
-        <div class="rule-sub">Power without dependency.</div>
-        <p>Traditional coaching requires you to keep coming back. The Boktor Method requires finite precision. We locate the subconscious anchor and remove it entirely. You leave equipped to perform autonomously. The objective is your absolute independence.</p>
-      </div>
-      <div class="rule-col" data-reveal>
-        <div class="rule-num">03 /</div>
-        <h3>Guaranteed, in writing.</h3>
-        <div class="rule-sub">Uncompromising accountability.</div>
-        <p>We do not deal in theory. If you are accepted to the roster and are not unequivocally convinced of the shift after your first private session, your investment is returned in full. No conditions. No friction.</p>
-      </div>
+<!-- ============ 07 FAQ ============ -->
+<section id="faq">
+  <div class="wrap narrow">
+    <div class="kicker">07 · Straight Answers</div>
+    <h2 class="reveal">The questions everyone asks about hypnotherapy.</h2>
+    <div class="faq-wrap">
+      <details><summary>What is hypnotherapy? How does it work?</summary><p>Hypnotherapy uses relaxation and focus to help you work on habits, emotions, or challenges. When you're deeply relaxed, your mind is more open to positive changes.</p></details>
+      <details><summary>Will I lose control during hypnosis?</summary><p>No, you'll stay in control the whole time. You'll feel relaxed, but you can hear and respond to everything, and you won't do anything you don't want to.</p></details>
+      <details><summary>What happens during a session?</summary><p>We'll start by talking about what you want to work on. Then Karim guides you into a calm, relaxed state and gives you helpful suggestions to support the changes you're looking for.</p></details>
+      <details><summary>Is hypnotherapy safe?</summary><p>Yes, it's completely safe. Hypnosis is a natural state of relaxation that you've likely experienced before, like when you're daydreaming or really focused on something.</p></details>
+      <details><summary>What does being hypnotised feel like?</summary><p>It feels like a peaceful, daydream-like state. You're fully aware but super relaxed, and you might feel a little lighter or calmer afterward.</p></details>
+      <details><summary>Will I remember what happens?</summary><p>Yes, you'll remember everything we talk about. Hypnosis isn't sleep — it's more like a relaxed, focused state.</p></details>
+      <details><summary>How do I know if this will work for me?</summary><p>If you're open to the process and ready to make changes, it can work well. We'll discuss your goals upfront and take it from there.</p></details>
+      <details><summary>Is this therapy?</summary><p>No. This is performance work, not therapy. Karim Boktor is a mental performance coach, not a psychologist or medical practitioner. If you're in acute crisis, reach out to a crisis service or your GP first — this work complements professional care, it doesn't replace it.</p></details>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     ( 07 ) FINAL CTA — Dark section
-     ============================================================ -->
-<section id="cta" aria-labelledby="cta-h2">
-  <div class="wrap">
-    <span class="sec-num" data-reveal>( 07 )</span>
-    <h2 class="h2" id="cta-h2">
-      <span class="h2-line-wrap"><span class="h2-line">This Starts</span></span>
-      <span class="h2-line-wrap"><span class="h2-line">With a</span></span>
-      <span class="h2-line-wrap"><span class="h2-line"><em>Real Conversation.</em></span></span>
-    </h2>
-    <p class="cta-sub" data-reveal>An entirely private, strictly confidential evaluation.</p>
-    <p class="cta-note" data-reveal>Every application is vetted and answered by Karim personally.</p>
-    <div data-reveal>
-      <a class="btn btn-white" href="https://karimboktor.com/breakthrough">Apply for the Roster</a>
-    </div>
-  </div>
+<!-- ============ FINAL CTA ============ -->
+<section class="final">
+  <h2>The season doesn't wait. Neither should you.</h2>
+  <p class="lead">Fill out a short application. If it's a fit, Karim follows up with a time for your first session.</p>
+  <a class="btn" href="play-the-way-you-train.html" style="font-size:16px;padding:19px 42px">Apply for the 4-Week Program</a>
+  <p class="trust-note" style="margin-top:20px">Application takes 3 minutes · No obligation · Best for athletes already performing at a high level</p>
 </section>
 
-<!-- ============================================================
-     FOOTER
-     ============================================================ -->
-<footer role="contentinfo">
-  <div class="wrap">
-    <div class="foot-inner">
-      <div class="foot-brand">
-        <a class="foot-logo" href="#hero" aria-label="Back to top">
-          <img src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/EEBzP9YC3rcjMAgCWpCu/media/68d7ce36c94baca1fa6db803.png" alt="KB monogram">
-        </a>
-        <p>The Performance Hypnotherapist. Removing the invisible ceiling for elite athletes and executives — through the subconscious, where it actually lives.</p>
-      </div>
-      <div class="foot-col">
-        <h5>Site</h5>
-        <a href="#ceiling">The Ceiling</a>
-        <a href="#story">The Story</a>
-        <a href="#proof">NFL Case Study</a>
-        <a href="#testimonials">Evidence</a>
-        <a href="#rules">The Rules</a>
-      </div>
-      <div class="foot-col">
-        <h5>Connect</h5>
-        <a href="https://www.linkedin.com/in/karimboktor" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://www.instagram.com/karimboktor" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://karimboktor.com/breakthrough">Apply for the Roster</a>
-      </div>
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="foot-grid">
+    <div>
+      <img src="assets/kb-logo-ondark.png" alt="Karim Boktor" width="860" height="513" style="width:170px;height:auto;margin-bottom:18px" loading="lazy">
+      <p>Mental performance coach for elite athletes and club leaders. Founder of The Boktor Method™. Better leaders. Better players. More wins.</p>
     </div>
-    <div class="foot-base">
-      <span>© 2026 The Boktor Method™ · All rights reserved</span>
-      <div class="foot-legal">
-        <a href="https://karimboktor.com/terms">Terms</a>
-        <a href="https://karimboktor.com/privacy">Privacy</a>
-      </div>
-      <span>Performance Hypnotherapist · Melbourne → Worldwide</span>
+    <div>
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="#problem">The Gap</a></li>
+        <li><a href="#about">About Karim</a></li>
+        <li><a href="#method">The Boktor Method</a></li>
+        <li><a href="play-the-way-you-train.html">Play the Way You Train</a></li>
+        <li><a href="https://www.karimboktor.com/contact">Free Breakthrough Call</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Connect</h5>
+      <ul>
+        <li><a href="https://www.instagram.com/karimboktor">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/businesshypnotherapist/">LinkedIn</a></li>
+        <li><a href="https://www.facebook.com/karim.boktor">Facebook</a></li>
+        <li><a href="https://www.karimboktor.com/contact">Contact</a></li>
+      </ul>
     </div>
   </div>
+  <div class="wordmark" aria-hidden="true">Boktor</div>
+  <div class="legal">© 2026 The Boktor Method™ · Coaching, not therapy · Karim Boktor is a mental performance coach, not a psychologist or medical practitioner<br><a href="https://www.karimboktor.com/contact" style="color:inherit">Terms &amp; Conditions</a></div>
 </footer>
 
-<!-- ============================================================
-     SCRIPTS
-     ============================================================ -->
-<!-- GSAP + Plugins -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
-<!-- Lenis smooth scroll -->
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.8/dist/lenis.min.js"></script>
-
 <script>
-(function () {
-  'use strict';
+(function(){
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // ---- Register GSAP plugins ----
-  gsap.registerPlugin(ScrollTrigger, CustomEase);
+  /* scroll progress */
+  var bar = document.querySelector('.progress');
+  window.addEventListener('scroll', function(){
+    var h = document.documentElement;
+    var p = h.scrollTop / (h.scrollHeight - h.clientHeight);
+    bar.style.width = (p*100) + '%';
+  }, {passive:true});
 
-  // ---- Custom easing (Kasia's signature ease) ----
-  CustomEase.create('expo.out', 'M0,0 C0.16,1 0.3,1 1,1');
-  CustomEase.create('smooth', 'M0,0 C0.25,0.1 0.25,1 1,1');
+  /* reveals */
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  }, {threshold:.15});
+  document.querySelectorAll('.reveal,.mirror-item').forEach(function(el){ io.observe(el); });
 
-  // ============================================================
-  // LENIS — buttery smooth scroll
-  // ============================================================
-  const lenis = new Lenis({
-    duration: 1.4,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    orientation: 'vertical',
-    smoothWheel: true,
-  });
+  /* THE GAP — draggable split */
+  var widget = document.getElementById('gapWidget');
+  var game = document.getElementById('gameSide');
+  var line = document.getElementById('gapLine');
+  var handle = document.getElementById('gapHandle');
+  var note = document.getElementById('closeNote');
+  var pct = 55, dragging = false, touched = false, sway = 0;
 
-  lenis.on('scroll', ScrollTrigger.update);
-
-  gsap.ticker.add((time) => { lenis.raf(time * 1000); });
-  gsap.ticker.lagSmoothing(0);
-
-  // ============================================================
-  // LOADER
-  // ============================================================
-  const loaderEl   = document.getElementById('loader');
-  const countEl    = document.getElementById('loader-count');
-  const barEl      = document.getElementById('loader-bar');
-
-  let count = 0;
-  const duration = 1600; // ms
-  const interval = 18;
-  const steps = duration / interval;
-  const increment = 100 / steps;
-
-  const loaderTimer = setInterval(() => {
-    count = Math.min(100, count + increment + (Math.random() * 1.5));
-    const rounded = Math.floor(count);
-    countEl.textContent = rounded;
-    barEl.style.width = rounded + '%';
-
-    if (count >= 100) {
-      clearInterval(loaderTimer);
-      countEl.textContent = '100';
-      barEl.style.width = '100%';
-
-      setTimeout(() => {
-        gsap.to(loaderEl, {
-          yPercent: -100,
-          duration: 1.0,
-          ease: 'expo.out',
-          onComplete: () => {
-            loaderEl.style.display = 'none';
-            loaderEl.setAttribute('aria-hidden', 'true');
-            startHeroAnimation();
-          }
-        });
-      }, 200);
-    }
-  }, interval);
-
-  // ============================================================
-  // HERO ANIMATION — staggered line reveals on load
-  // ============================================================
-  function startHeroAnimation() {
-    const lines = ['#hl1','#hl2','#hl3','#hl5'];
-
-    gsap.to(lines, {
-      y: 0,
-      opacity: 1,
-      duration: 1.0,
-      ease: 'expo.out',
-      stagger: 0.12,
-      onComplete: () => {
-        // Reveal pull line
-        gsap.to('#hero-pull', { opacity: 1, y: 0, duration: 0.7, ease: 'smooth' });
-        // Reveal CTAs
-        gsap.to('#hero-ctas', { opacity: 1, y: 0, duration: 0.7, ease: 'smooth', delay: 0.15 });
-        // Reveal scroll cue
-        gsap.to('#hero-scroll-cue', { opacity: 1, y: 0, duration: 0.7, ease: 'smooth', delay: 0.3 });
-      }
-    });
+  function setPct(p){
+    pct = Math.max(4, Math.min(96, p));
+    game.style.clipPath = 'inset(0 0 0 ' + pct + '%)';
+    line.style.left = pct + '%';
+    handle.style.left = pct + '%';
+    if(pct > 88 && touched){ note.textContent = 'Gap closed. That\'s the work.'; }
+    else if(touched){ note.textContent = 'Drag the line →'; }
   }
-
-  // ============================================================
-  // H2 LINE REVEALS — scroll-triggered
-  // ============================================================
-  document.querySelectorAll('.h2-line').forEach((line) => {
-    const wrap = line.closest('section') || document.body;
-    ScrollTrigger.create({
-      trigger: line.parentElement,
-      start: 'top 85%',
-      onEnter: () => line.classList.add('revealed'),
-    });
-  });
-
-  // ============================================================
-  // DATA-REVEAL — fade up on scroll
-  // ============================================================
-  document.querySelectorAll('[data-reveal]').forEach((el) => {
-    ScrollTrigger.create({
-      trigger: el,
-      start: 'top 88%',
-      onEnter: () => el.classList.add('revealed'),
-    });
-  });
-
-  // ============================================================
-  // WORD-BY-WORD SCRUB — Kasia's signature effect
-  // ============================================================
-  document.querySelectorAll('[data-scrub]').forEach((el) => {
-    // Wrap each word in a span
-    const text = el.innerHTML;
-    const words = text.split(/(\s+)/);
-    el.innerHTML = words.map(w =>
-      w.trim() ? `<span class="word">${w}</span>` : w
-    ).join('');
-
-    const wordEls = el.querySelectorAll('.word');
-
-    ScrollTrigger.create({
-      trigger: el,
-      start: 'top 80%',
-      end: 'bottom 30%',
-      scrub: 1.2,
-      onUpdate: (self) => {
-        const progress = self.progress;
-        const total = wordEls.length;
-        wordEls.forEach((w, i) => {
-          const wordProgress = Math.max(0, Math.min(1, (progress * total - i + 1)));
-          w.style.opacity = 0.2 + wordProgress * 0.8;
-        });
-      }
-    });
-  });
-
-  // ============================================================
-  // SECTION ALTERNATION — light/dark backgrounds
-  // ============================================================
-  // Sections already have correct bg in CSS. Just ensure smooth transitions.
-
-  // ============================================================
-  // NAV — scroll state
-  // ============================================================
-  const nav = document.getElementById('nav');
-  ScrollTrigger.create({
-    start: 'top -80px',
-    onUpdate: (self) => {
-      nav.classList.toggle('scrolled', self.scroll() > 80);
-    }
-  });
-
-  // ============================================================
-  // STICKY BAR — show after hero
-  // ============================================================
-  const stickyBar = document.getElementById('sticky-bar');
-  ScrollTrigger.create({
-    trigger: '#hero',
-    start: 'bottom 60%',
-    end: 'bottom -200%',
-    onEnter: () => stickyBar.classList.add('visible'),
-    onLeaveBack: () => stickyBar.classList.remove('visible'),
-  });
-  // Hide near footer
-  ScrollTrigger.create({
-    trigger: 'footer',
-    start: 'top 80%',
-    onEnter: () => stickyBar.classList.remove('visible'),
-    onLeaveBack: () => stickyBar.classList.add('visible'),
-  });
-
-  // ============================================================
-  // SCROLL PROGRESS BAR
-  // ============================================================
-  const progressBar = document.getElementById('progress');
-  lenis.on('scroll', ({ progress }) => {
-    progressBar.style.width = (progress * 100) + '%';
-  });
-
-  // ============================================================
-  // CUSTOM CURSOR
-  // ============================================================
-  const cursor = document.getElementById('cursor');
-  let mouseX = 0, mouseY = 0;
-  let curX = 0, curY = 0;
-
-  document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-  });
-
-  function animateCursor() {
-    curX += (mouseX - curX) * 0.15;
-    curY += (mouseY - curY) * 0.15;
-    cursor.style.left = curX + 'px';
-    cursor.style.top  = curY + 'px';
-    requestAnimationFrame(animateCursor);
+  function pctFromX(x){
+    var r = widget.getBoundingClientRect();
+    return ((x - r.left) / r.width) * 100;
   }
-  animateCursor();
-
-  document.querySelectorAll('a, button').forEach((el) => {
-    el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-    el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-  });
-
-  // ============================================================
-  // MOBILE MENU
-  // ============================================================
-  const hamburger = document.getElementById('nav-hamburger');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const mmClose = document.getElementById('mm-close');
-
-  hamburger.addEventListener('click', () => {
-    mobileMenu.classList.add('open');
-    hamburger.setAttribute('aria-expanded', 'true');
-    lenis.stop();
-  });
-
-  const closeMM = () => {
-    mobileMenu.classList.remove('open');
-    hamburger.setAttribute('aria-expanded', 'false');
-    lenis.start();
-  };
-
-  mmClose.addEventListener('click', closeMM);
-  document.querySelectorAll('.mm-link, .mm-cta').forEach(l => l.addEventListener('click', closeMM));
-
-  // ============================================================
-  // HERO PORTRAIT PARALLAX
-  // ============================================================
-  const heroImg = document.getElementById('hero-img');
-  if (heroImg) {
-    gsap.to(heroImg, {
-      yPercent: 12,
-      ease: 'none',
-      scrollTrigger: {
-        trigger: '#hero',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: true,
-      }
-    });
+  function start(e){ dragging = true; touched = true; e.preventDefault(); }
+  function move(e){
+    if(!dragging) return;
+    var x = e.touches ? e.touches[0].clientX : e.clientX;
+    setPct(pctFromX(x));
   }
+  function end(){ dragging = false; }
 
+  handle.addEventListener('mousedown', start);
+  handle.addEventListener('touchstart', start, {passive:false});
+  window.addEventListener('mousemove', move);
+  window.addEventListener('touchmove', move, {passive:true});
+  window.addEventListener('mouseup', end);
+  window.addEventListener('touchend', end);
+  widget.addEventListener('click', function(e){
+    if(e.target === handle) return;
+    touched = true; setPct(pctFromX(e.clientX));
+  });
+  handle.addEventListener('keydown', function(e){
+    if(e.key === 'ArrowLeft'){ touched = true; setPct(pct - 4); e.preventDefault(); }
+    if(e.key === 'ArrowRight'){ touched = true; setPct(pct + 4); e.preventDefault(); }
+  });
+
+  /* idle sway until first touch */
+  if(!reduced){
+    (function swayLoop(){
+      if(!touched){ sway += 0.012; setPct(55 + Math.sin(sway) * 5); }
+      requestAnimationFrame(swayLoop);
+    })();
+  }
+  setPct(55);
+
+  /* video facades — nothing downloads until click */
+  var vmodal = document.getElementById('vmodal');
+  var vplayer = document.getElementById('vplayer');
+  var vclose  = document.getElementById('vclose');
+  var lastFocus = null;
+
+  function openVideo(src, trigger){
+    lastFocus = trigger;
+    vplayer.src = src;
+    vmodal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    vplayer.play().catch(function(){});
+    vclose.focus();
+  }
+  function closeVideo(){
+    vplayer.pause();
+    vplayer.removeAttribute('src');
+    vplayer.load();
+    vmodal.classList.remove('open');
+    document.body.style.overflow = '';
+    if(lastFocus) lastFocus.focus();
+  }
+  document.querySelectorAll('.vcard').forEach(function(card){
+    card.addEventListener('click', function(){ openVideo(card.dataset.video, card); });
+  });
+  vclose.addEventListener('click', closeVideo);
+  vmodal.addEventListener('click', function(e){ if(e.target === vmodal) closeVideo(); });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && vmodal.classList.contains('open')) closeVideo();
+  });
 })();
 </script>
+
+<div class="vmodal" id="vmodal" role="dialog" aria-modal="true" aria-label="Athlete video">
+  <button class="vclose" id="vclose" aria-label="Close video">&times;</button>
+  <video id="vplayer" controls playsinline preload="none"></video>
+</div>
 </body>
 </html>
