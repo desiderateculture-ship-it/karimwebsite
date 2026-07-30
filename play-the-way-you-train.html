@@ -527,8 +527,12 @@ h1,h2,h3,.headline{
     errEl.hidden = true;
     btn.disabled = true;
     btn.textContent = 'Sending…';
+    var fullName = form.name.value.trim();
+    var nameParts = fullName.split(/\s+/);
     var payload = {
-      name: form.name.value.trim(),
+      name: fullName,
+      first_name: nameParts[0] || '',
+      last_name: nameParts.slice(1).join(' '),
       email: form.email.value.trim(),
       sport: form.sport.value.trim(),
       pressure: form.pressure.value.trim(),
